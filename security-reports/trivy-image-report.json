@@ -3,18 +3,18 @@
   "Trivy": {
     "Version": "0.75.0"
   },
-  "ReportID": "01a11a0f-1ce7-798c-ae46-bb09b58c0ab6",
-  "CreatedAt": "2026-10-08T05:49:20.487628871Z",
-  "ArtifactID": "sha256:7fae97a6e79d9c72ccde3eb9e75376f634e7db3a4064547c06af951f29e54332",
+  "ReportID": "01a11a16-16fa-74b1-8671-3a0beb1da30d",
+  "CreatedAt": "2026-10-08T05:56:57.722310048Z",
+  "ArtifactID": "sha256:162884b48cfac2507829d2a6d764250796a9c872b713484743424ab3956f70ad",
   "ArtifactName": "petstore-app:latest",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 360441344,
+    "Size": 360442368,
     "OS": {
       "Family": "ubuntu",
       "Name": "22.04"
     },
-    "ImageID": "sha256:c613ce480836418af5bc10ffcd4b406b53a3636b1cb14edf671a8a49a8cfe0aa",
+    "ImageID": "sha256:3b1f73aaf042f1b97ed62810fe4ebb7fba57d208d89e62caf37b1d4ba6b2452d",
     "DiffIDs": [
       "sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c",
       "sha256:df69676f653a5e818bc4e66e27840525ad9b7954d117bed99fcdcf82fefd4bb6",
@@ -26,241 +26,253 @@
       "sha256:e36b35022a88ea01485f9a7fe1e2c30e26557e586c5874844e679a96669e1f5f",
       "sha256:813892354f6f990aefd1b204755a638aec55c45664565aedbf945f94087f5f29",
       "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-      "sha256:2103d731a85e17edea083669ad92ee17d5c15f2f0235142430c9ed5b0616f08e",
-      "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76",
-      "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd",
-      "sha256:3b780ce6f2803102b7aadb196ce3f5a17a79a0e6fee7b02cd6c28980ca202c82"
+      "sha256:2154a5a0cde901dff71314ae0040ade8d3ad5f39caff318031f3d76c04484594",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98",
+      "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc",
+      "sha256:92533957144d55abab00b6a3715486cffb9ea05f71af9adc1ea5ee57c6aefb0a"
     ],
     "RepoTags": [
-      "petstore-app:latest",
-      "petstore-app:test"
+      "petstore-app:latest"
     ],
     "RepoDigests": [
-      "petstore-app@sha256:c613ce480836418af5bc10ffcd4b406b53a3636b1cb14edf671a8a49a8cfe0aa"
+      "petstore-app@sha256:3b1f73aaf042f1b97ed62810fe4ebb7fba57d208d89e62caf37b1d4ba6b2452d"
     ],
     "Reference": "petstore-app:latest",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-10-08T11:00:11.568954178+05:30",
+      "created": "2026-10-08T11:26:36.656236805+05:30",
       "history": [
         {
-          "created": "2026-09-24T22:24:04.688908979Z",
+          "created": "2026-09-24T22:24:04Z",
           "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
           "empty_layer": true
         },
         {
-          "created": "2026-09-24T22:24:04.723527376Z",
+          "created": "2026-09-24T22:24:04Z",
           "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
           "empty_layer": true
         },
         {
-          "created": "2026-09-24T22:24:04.751455651Z",
+          "created": "2026-09-24T22:24:04Z",
           "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
           "empty_layer": true
         },
         {
-          "created": "2026-09-24T22:24:06.837737736Z",
+          "created": "2026-09-24T22:24:06Z",
           "created_by": "/bin/sh -c #(nop) ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / "
         },
         {
-          "created": "2026-09-24T22:24:07.239071539Z",
+          "created": "2026-09-24T22:24:07Z",
           "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T01:17:47.713816135Z",
+          "created": "2026-10-02T01:17:47Z",
           "created_by": "ENV JAVA_HOME=/opt/java/openjdk",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T01:17:47.713816135Z",
+          "created": "2026-10-02T01:17:47Z",
           "created_by": "ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T01:17:47.713816135Z",
+          "created": "2026-10-02T01:17:47Z",
           "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T01:17:47.713816135Z",
+          "created": "2026-10-02T01:17:47Z",
           "created_by": "RUN /bin/sh -c set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo \"en_US.UTF-8 UTF-8\" \u003e\u003e /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T01:17:47.713816135Z",
+          "created": "2026-10-02T01:17:47Z",
           "created_by": "ENV JAVA_VERSION=jdk-17.0.20.1+1",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T01:18:29.645177557Z",
+          "created": "2026-10-02T01:18:29Z",
           "created_by": "RUN /bin/sh -c set -eux;     ARCH=\"$(dpkg --print-architecture)\";     case \"${ARCH}\" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo \"Unsupported arch: ${ARCH}\";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME=\"$(mktemp -d)\";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf \"${GNUPGHOME}\" /tmp/openjdk.tar.gz.sig;     echo \"${ESUM} */tmp/openjdk.tar.gz\" | sha256sum -c -;     mkdir -p \"$JAVA_HOME\";     tar --extract         --file /tmp/openjdk.tar.gz         --directory \"$JAVA_HOME\"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find \"$JAVA_HOME/lib\" -name '*.so' -exec dirname '{}' ';' | sort -u \u003e /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T01:18:29.740272842Z",
+          "created": "2026-10-02T01:18:29Z",
           "created_by": "RUN /bin/sh -c set -eux;     echo \"Verifying install ...\";     echo \"java --version\"; java --version;     echo \"Complete.\" # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T01:18:29.760728939Z",
+          "created": "2026-10-02T01:18:29Z",
           "created_by": "COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T01:18:29.760728939Z",
+          "created": "2026-10-02T01:18:29Z",
           "created_by": "ENTRYPOINT [\"/__cacert_entrypoint.sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:01.83405401Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "ENV CATALINA_HOME=/usr/local/tomcat",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:01.83405401Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:01.83405401Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "RUN /bin/sh -c mkdir -p \"$CATALINA_HOME\" # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T03:27:01.860468846Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "WORKDIR /usr/local/tomcat",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T03:27:01.860468846Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:01.860468846Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:01.860468846Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "ENV TOMCAT_MAJOR=9",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:01.860468846Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "ENV TOMCAT_VERSION=9.0.122",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:01.860468846Z",
+          "created": "2026-10-02T03:27:01Z",
           "created_by": "ENV TOMCAT_SHA512=1f2f7d822a407999d954e7eb4fb1e78998c2a9372bb466d27e8cefd2521ef779183744f39dfa50a77ce3b798e7fe30bf2fd43fd1d6a2e6135617af1ddda6ba2a",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:02.032535579Z",
+          "created": "2026-10-02T03:27:02Z",
           "created_by": "COPY /usr/local/tomcat /usr/local/tomcat # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T03:27:12.065763576Z",
+          "created": "2026-10-02T03:27:12Z",
           "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \txargs -rt apt-get install -y --no-install-recommends \u003c \"$TOMCAT_NATIVE_LIBDIR/.dependencies.txt\"; \trm -rf /var/lib/apt/lists/* # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T03:27:12.565672106Z",
+          "created": "2026-10-02T03:27:12Z",
           "created_by": "RUN /bin/sh -c set -eux; \tnativeLines=\"$(catalina.sh configtest 2\u003e\u00261)\"; \tnativeLines=\"$(echo \"$nativeLines\" | grep 'Apache Tomcat Native')\"; \tnativeLines=\"$(echo \"$nativeLines\" | sort -u)\"; \tif ! echo \"$nativeLines\" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' \u003e\u00262; then \t\techo \u003e\u00262 \"$nativeLines\"; \t\texit 1; \tfi # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-02T03:27:12.565672106Z",
+          "created": "2026-10-02T03:27:12Z",
           "created_by": "EXPOSE map[8080/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:12.565672106Z",
+          "created": "2026-10-02T03:27:12Z",
           "created_by": "ENTRYPOINT []",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-02T03:27:12.565672106Z",
+          "created": "2026-10-02T03:27:12Z",
           "created_by": "CMD [\"catalina.sh\" \"run\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T10:59:56.894513774+05:30",
-          "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Mukesh Chaudhary",
+          "created": "2026-10-08T05:55:22Z",
+          "created_by": "LABEL maintainer=Mukesh Chaudhary",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T10:59:57.663350238+05:30",
-          "created_by": "/bin/sh -c #(nop)  LABEL description=Production-ready container for PetStore Application",
+          "created": "2026-10-08T05:55:22Z",
+          "created_by": "LABEL description=Production-ready container for PetStore Application",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T10:59:58.556855234+05:30",
-          "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.source=https://github.com/mukeshchaudhary14/Petstore_App",
+          "created": "2026-10-08T05:55:22Z",
+          "created_by": "LABEL org.opencontainers.image.source=https://github.com/mukeshchaudhary14/Petstore_App",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T10:59:59.876163985+05:30",
-          "created_by": "/bin/sh -c groupadd -r tomcat -g 1001 \u0026\u0026     useradd -r -u 1001 -g tomcat -d /usr/local/tomcat -s /usr/sbin/nologin tomcat"
+          "created": "2026-10-08T05:55:22Z",
+          "created_by": "RUN /bin/sh -c groupadd -r tomcat -g 1001 \u0026\u0026     useradd -r -u 1001 -g tomcat -d /usr/local/tomcat -s /usr/sbin/nologin tomcat # buildkit",
+          "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-10-08T11:00:01.350688204+05:30",
-          "created_by": "/bin/sh -c rm -rf /usr/local/tomcat/webapps/*",
+          "created": "2026-10-08T05:55:22Z",
+          "created_by": "RUN /bin/sh -c rm -rf /usr/local/tomcat/webapps/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-08T05:56:33Z",
+          "created_by": "COPY /app/target/jpetstore.war /usr/local/tomcat/webapps/ROOT.war # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-08T05:56:33Z",
+          "created_by": "COPY /app/target/jpetstore.war /usr/local/tomcat/webapps/jpetstore.war # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-08T05:56:36Z",
+          "created_by": "RUN /bin/sh -c chown -R tomcat:tomcat /usr/local/tomcat # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2026-10-08T05:56:36Z",
+          "created_by": "ENV JPETSTORE_PORT=8080 CATALINA_HOME=/usr/local/tomcat CATALINA_BASE=/usr/local/tomcat JAVA_OPTS=-Xms256m -Xmx512m -XX:+UseG1GC -Djava.security.egd=file:/dev/./urandom",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T05:30:02.472714684Z",
-          "created_by": "/bin/sh -c #(nop) COPY file:76e07632b4706976545d15f1473feadffc25e2f7e169a52d529dcc3eacfcbee9 in /usr/local/tomcat/webapps/ROOT.war "
-        },
-        {
-          "created": "2026-10-08T05:30:04.131777636Z",
-          "created_by": "/bin/sh -c #(nop) COPY file:76e07632b4706976545d15f1473feadffc25e2f7e169a52d529dcc3eacfcbee9 in /usr/local/tomcat/webapps/jpetstore.war "
-        },
-        {
-          "created": "2026-10-08T11:00:06.934721578+05:30",
-          "created_by": "/bin/sh -c chown -R tomcat:tomcat /usr/local/tomcat"
-        },
-        {
-          "created": "2026-10-08T11:00:08.451498921+05:30",
-          "created_by": "/bin/sh -c #(nop)  ENV JPETSTORE_PORT=8080 CATALINA_HOME=/usr/local/tomcat CATALINA_BASE=/usr/local/tomcat JAVA_OPTS=-Xms256m -Xmx512m -XX:+UseG1GC -Djava.security.egd=file:/dev/./urandom",
+          "created": "2026-10-08T05:56:36Z",
+          "created_by": "USER 1001",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T11:00:09.132536729+05:30",
-          "created_by": "/bin/sh -c #(nop)  USER 1001",
+          "created": "2026-10-08T05:56:36Z",
+          "created_by": "EXPOSE [8080/tcp]",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T11:00:09.860073633+05:30",
-          "created_by": "/bin/sh -c #(nop)  EXPOSE 8080",
+          "created": "2026-10-08T05:56:36Z",
+          "created_by": "HEALTHCHECK \u0026{[\"CMD-SHELL\" \"curl -f http://localhost:8080/jpetstore/ || curl -f http://localhost:8080/ || exit 1\"] \"30s\" \"5s\" \"35s\" \"0s\" '\\x03'}",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-10-08T11:00:10.524912991+05:30",
-          "created_by": "/bin/sh -c #(nop)  HEALTHCHECK \u0026{[\"CMD-SHELL\" \"curl -f http://localhost:8080/jpetstore/ || curl -f http://localhost:8080/ || exit 1\"] \"30s\" \"5s\" \"35s\" \"0s\" '\\x03'}",
-          "empty_layer": true
-        },
-        {
-          "created": "2026-10-08T11:00:11.568954178+05:30",
-          "created_by": "/bin/sh -c #(nop)  CMD [\"catalina.sh\" \"run\"]",
+          "created": "2026-10-08T05:56:36Z",
+          "created_by": "CMD [\"catalina.sh\" \"run\"]",
+          "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         }
       ],
@@ -278,10 +290,11 @@
           "sha256:e36b35022a88ea01485f9a7fe1e2c30e26557e586c5874844e679a96669e1f5f",
           "sha256:813892354f6f990aefd1b204755a638aec55c45664565aedbf945f94087f5f29",
           "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-          "sha256:2103d731a85e17edea083669ad92ee17d5c15f2f0235142430c9ed5b0616f08e",
-          "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76",
-          "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd",
-          "sha256:3b780ce6f2803102b7aadb196ce3f5a17a79a0e6fee7b02cd6c28980ca202c82"
+          "sha256:2154a5a0cde901dff71314ae0040ade8d3ad5f39caff318031f3d76c04484594",
+          "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+          "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98",
+          "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc",
+          "sha256:92533957144d55abab00b6a3715486cffb9ea05f71af9adc1ea5ee57c6aefb0a"
         ]
       },
       "config": {
@@ -317,6 +330,9 @@
           "JAVA_OPTS=-Xms256m -Xmx512m -XX:+UseG1GC -Djava.security.egd=file:/dev/./urandom"
         ],
         "Labels": {
+          "com.docker.compose.project": "petstore_app",
+          "com.docker.compose.service": "petstore-app",
+          "com.docker.compose.version": "2.40.3",
           "description": "Production-ready container for PetStore Application",
           "maintainer": "Mukesh Chaudhary",
           "org.opencontainers.image.source": "https://github.com/mukeshchaudhary14/Petstore_App",
@@ -326,7 +342,8 @@
         "WorkingDir": "/usr/local/tomcat",
         "ExposedPorts": {
           "8080/tcp": {}
-        }
+        },
+        "ArgsEscaped": true
       }
     },
     "Layers": [
@@ -382,23 +399,28 @@
       },
       {
         "Size": 338432,
-        "Digest": "sha256:90ce1783081a531ee3ff55bde181524f2f0cf1656b8868d313104eb54d237f99",
-        "DiffID": "sha256:2103d731a85e17edea083669ad92ee17d5c15f2f0235142430c9ed5b0616f08e"
+        "Digest": "sha256:78e66ffc14b8599f7e80e10781b1c51d07ac30e6e76b57d53cc968a2ec110eae",
+        "DiffID": "sha256:2154a5a0cde901dff71314ae0040ade8d3ad5f39caff318031f3d76c04484594"
+      },
+      {
+        "Size": 1024,
+        "Digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1",
+        "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       },
       {
         "Size": 10126336,
-        "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-        "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+        "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+        "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
       },
       {
         "Size": 10126336,
-        "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-        "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+        "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+        "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
       },
       {
         "Size": 41961984,
-        "Digest": "sha256:f899f45bfb1c62cc42f6d341a9428f11ece88115a3ac658d98cf75b6ef86553a",
-        "DiffID": "sha256:3b780ce6f2803102b7aadb196ce3f5a17a79a0e6fee7b02cd6c28980ca202c82"
+        "Digest": "sha256:46218715a053b5b66b2eeb7cd9c98bc5857b3ec78d6aa71379177363f208f4c3",
+        "DiffID": "sha256:92533957144d55abab00b6a3715486cffb9ea05f71af9adc1ea5ee57c6aefb0a"
       }
     ]
   },
@@ -11581,8 +11603,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/commons-logging-1.1.3.jar",
           "AnalyzedBy": "jar"
@@ -11598,8 +11620,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/commons-logging-1.1.3.jar",
           "AnalyzedBy": "jar"
@@ -11615,8 +11637,8 @@
             "CDDL-1.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/jstl-1.2.jar",
           "AnalyzedBy": "jar"
@@ -11632,8 +11654,8 @@
             "CDDL-1.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/jstl-1.2.jar",
           "AnalyzedBy": "jar"
@@ -11649,8 +11671,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/log4j-1.2.17.jar",
           "AnalyzedBy": "jar"
@@ -11666,8 +11688,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/log4j-1.2.17.jar",
           "AnalyzedBy": "jar"
@@ -11680,8 +11702,8 @@
           },
           "Version": "1.6.0",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/stripes-1.6.0.jar",
           "AnalyzedBy": "jar"
@@ -11694,8 +11716,8 @@
           },
           "Version": "1.6.0",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/stripes-1.6.0.jar",
           "AnalyzedBy": "jar"
@@ -11711,8 +11733,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/ognl-3.1.12.jar",
           "AnalyzedBy": "jar"
@@ -11728,8 +11750,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/ognl-3.1.12.jar",
           "AnalyzedBy": "jar"
@@ -11745,8 +11767,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/mybatis-3.4.1.jar",
           "AnalyzedBy": "jar"
@@ -11762,8 +11784,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/mybatis-3.4.1.jar",
           "AnalyzedBy": "jar"
@@ -12385,8 +12407,8 @@
           },
           "Version": "2.3.4",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/hsqldb-2.3.4.jar",
           "AnalyzedBy": "jar"
@@ -12399,8 +12421,8 @@
           },
           "Version": "2.3.4",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/hsqldb-2.3.4.jar",
           "AnalyzedBy": "jar"
@@ -12418,8 +12440,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/javassist-3.20.0-GA.jar",
           "AnalyzedBy": "jar"
@@ -12437,8 +12459,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/mybatis-3.4.1.jar",
           "AnalyzedBy": "jar"
@@ -12456,8 +12478,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/javassist-3.20.0-GA.jar",
           "AnalyzedBy": "jar"
@@ -12475,8 +12497,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/mybatis-3.4.1.jar",
           "AnalyzedBy": "jar"
@@ -12489,8 +12511,8 @@
           },
           "Version": "6.0.2",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war",
           "AnalyzedBy": "jar"
@@ -12503,8 +12525,8 @@
           },
           "Version": "6.0.2",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war",
           "AnalyzedBy": "jar"
@@ -12517,8 +12539,8 @@
           },
           "Version": "3.4.1",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/mybatis-3.4.1.jar",
           "AnalyzedBy": "jar"
@@ -12531,8 +12553,8 @@
           },
           "Version": "3.4.1",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/mybatis-3.4.1.jar",
           "AnalyzedBy": "jar"
@@ -12548,8 +12570,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/mybatis-spring-1.3.0.jar",
           "AnalyzedBy": "jar"
@@ -12565,8 +12587,8 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/mybatis-spring-1.3.0.jar",
           "AnalyzedBy": "jar"
@@ -12583,8 +12605,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-aop-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12601,8 +12623,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-aop-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12619,8 +12641,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-beans-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12637,8 +12659,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-beans-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12655,8 +12677,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-context-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12673,8 +12695,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-context-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12691,8 +12713,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-core-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12709,8 +12731,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-core-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12727,8 +12749,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-expression-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12745,8 +12767,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-expression-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12763,8 +12785,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-jdbc-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12781,8 +12803,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-jdbc-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12799,8 +12821,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-tx-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12817,8 +12839,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-tx-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12835,8 +12857,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "FilePath": "usr/local/tomcat/webapps/ROOT.war/WEB-INF/lib/spring-web-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12853,8 +12875,8 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "FilePath": "usr/local/tomcat/webapps/jpetstore.war/WEB-INF/lib/spring-web-4.3.4.RELEASE.jar",
           "AnalyzedBy": "jar"
@@ -12875,8 +12897,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17571",
@@ -12885,7 +12907,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:cb3aa22b69e5b62e8b62a8ba4578251932f08639531e2f1078b25c80ccc86f9f",
+          "Fingerprint": "sha256:0691ca5e7efe53eec42c2a98ebd94a9c206ff85ee1980ea79a5cbd4379bde189",
           "Title": "log4j: deserialization of untrusted data in SocketServer",
           "Description": "Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17.",
           "Severity": "CRITICAL",
@@ -13057,8 +13079,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17571",
@@ -13067,7 +13089,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:cb3aa22b69e5b62e8b62a8ba4578251932f08639531e2f1078b25c80ccc86f9f",
+          "Fingerprint": "sha256:0691ca5e7efe53eec42c2a98ebd94a9c206ff85ee1980ea79a5cbd4379bde189",
           "Title": "log4j: deserialization of untrusted data in SocketServer",
           "Description": "Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17.",
           "Severity": "CRITICAL",
@@ -13239,8 +13261,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23305",
@@ -13249,7 +13271,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:50a40474eaccce8828e64c6ceac3aa9ad7f945fca88da66f81688bfcb333f0c4",
+          "Fingerprint": "sha256:216b7396263db83ee3fe9804bac54e17262b4e7f6d157c8adf102417e3db8044",
           "Title": "log4j: SQL injection in Log4j 1.x when application is configured to use JDBCAppender",
           "Description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
           "Severity": "CRITICAL",
@@ -13327,8 +13349,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23305",
@@ -13337,7 +13359,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:50a40474eaccce8828e64c6ceac3aa9ad7f945fca88da66f81688bfcb333f0c4",
+          "Fingerprint": "sha256:216b7396263db83ee3fe9804bac54e17262b4e7f6d157c8adf102417e3db8044",
           "Title": "log4j: SQL injection in Log4j 1.x when application is configured to use JDBCAppender",
           "Description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
           "Severity": "CRITICAL",
@@ -13415,8 +13437,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23307",
@@ -13425,7 +13447,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:08277cbb0cb402fb9f02cab68891eaa0f0fbbc8bc05d408d2d67b147ec572dea",
+          "Fingerprint": "sha256:e216c533c2a60545c74dc6b792ae8a55014c62bf9d432bf1ecaa51847becb6dd",
           "Title": "log4j: Unsafe deserialization flaw in Chainsaw log viewer",
           "Description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
           "Severity": "CRITICAL",
@@ -13499,8 +13521,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23307",
@@ -13509,7 +13531,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:08277cbb0cb402fb9f02cab68891eaa0f0fbbc8bc05d408d2d67b147ec572dea",
+          "Fingerprint": "sha256:e216c533c2a60545c74dc6b792ae8a55014c62bf9d432bf1ecaa51847becb6dd",
           "Title": "log4j: Unsafe deserialization flaw in Chainsaw log viewer",
           "Description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
           "Severity": "CRITICAL",
@@ -13583,8 +13605,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-4104",
@@ -13593,7 +13615,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:370a465c7397f780e26d2a79925ec04f40797598d9b6e4da8e8409fdcb2e10e7",
+          "Fingerprint": "sha256:49874647ba21dd2dc7f1152ca85289f0f669ec9846247ed4d207470412240b6f",
           "Title": "log4j: Remote code execution in Log4j 1.x when application is configured to use JMSAppender",
           "Description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
           "Severity": "HIGH",
@@ -13681,8 +13703,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-4104",
@@ -13691,7 +13713,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:370a465c7397f780e26d2a79925ec04f40797598d9b6e4da8e8409fdcb2e10e7",
+          "Fingerprint": "sha256:49874647ba21dd2dc7f1152ca85289f0f669ec9846247ed4d207470412240b6f",
           "Title": "log4j: Remote code execution in Log4j 1.x when application is configured to use JMSAppender",
           "Description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
           "Severity": "HIGH",
@@ -13779,8 +13801,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23302",
@@ -13789,7 +13811,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:1df23199801a87ff8b8b9c61659c1db72005db6e5f96800a9fa7b0fd4de7d8ff",
+          "Fingerprint": "sha256:04d930c38eac3ca782638b7120b90e06379f0af3132587de92ddf64a63179061",
           "Title": "log4j: Remote code execution in Log4j 1.x when application is configured to use JMSSink",
           "Description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
           "Severity": "HIGH",
@@ -13869,8 +13891,8 @@
           "InstalledVersion": "1.2.17",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23302",
@@ -13879,7 +13901,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:1df23199801a87ff8b8b9c61659c1db72005db6e5f96800a9fa7b0fd4de7d8ff",
+          "Fingerprint": "sha256:04d930c38eac3ca782638b7120b90e06379f0af3132587de92ddf64a63179061",
           "Title": "log4j: Remote code execution in Log4j 1.x when application is configured to use JMSSink",
           "Description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
           "Severity": "HIGH",
@@ -13960,8 +13982,8 @@
           "FixedVersion": "2.0",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26464",
@@ -13970,7 +13992,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:3d95b2e5a57fe1d222f897606876a25e25ca9de2498e964cdcf9e8bbdc78beb0",
+          "Fingerprint": "sha256:f02c7c277a8f84f47c23c67e6d687dcfef7e39dec01adc2df5470a02fc558f47",
           "Title": "log4j1-socketappender: DoS via hashmap logging",
           "Description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
           "Severity": "HIGH",
@@ -14024,8 +14046,8 @@
           "FixedVersion": "2.0",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26464",
@@ -14034,7 +14056,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:3d95b2e5a57fe1d222f897606876a25e25ca9de2498e964cdcf9e8bbdc78beb0",
+          "Fingerprint": "sha256:f02c7c277a8f84f47c23c67e6d687dcfef7e39dec01adc2df5470a02fc558f47",
           "Title": "log4j1-socketappender: DoS via hashmap logging",
           "Description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
           "Severity": "HIGH",
@@ -14088,8 +14110,8 @@
           "FixedVersion": "2.7.1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41853",
@@ -14098,7 +14120,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:13e075106e8aea1262af4a4e3da32c95be7dc2b1be5774d0a1f4e975548d5255",
+          "Fingerprint": "sha256:1e775db7788c1b42039ddbe795138624e6d7c17385cb5fae1362365ef4d51aca",
           "Title": "hsqldb: Untrusted input may lead to RCE attack",
           "Description": "Those using java.sql.Statement or java.sql.PreparedStatement in hsqldb (HyperSQL DataBase) to process untrusted input may be vulnerable to a remote code execution attack. By default it is allowed to call any static method of any Java class in the classpath resulting in code execution. The issue can be prevented by updating to 2.7.1 or by setting the system property \"hsqldb.method_class_names\" to classes which are allowed to be called. For example, System.setProperty(\"hsqldb.method_class_names\", \"abc\") or Java argument -Dhsqldb.method_class_names=\"abc\" can be used. From version 2.7.1 all classes by default are not accessible except those in java.lang.Math and need to be manually enabled.",
           "Severity": "CRITICAL",
@@ -14157,8 +14179,8 @@
           "FixedVersion": "2.7.1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41853",
@@ -14167,7 +14189,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:13e075106e8aea1262af4a4e3da32c95be7dc2b1be5774d0a1f4e975548d5255",
+          "Fingerprint": "sha256:1e775db7788c1b42039ddbe795138624e6d7c17385cb5fae1362365ef4d51aca",
           "Title": "hsqldb: Untrusted input may lead to RCE attack",
           "Description": "Those using java.sql.Statement or java.sql.PreparedStatement in hsqldb (HyperSQL DataBase) to process untrusted input may be vulnerable to a remote code execution attack. By default it is allowed to call any static method of any Java class in the classpath resulting in code execution. The issue can be prevented by updating to 2.7.1 or by setting the system property \"hsqldb.method_class_names\" to classes which are allowed to be called. For example, System.setProperty(\"hsqldb.method_class_names\", \"abc\") or Java argument -Dhsqldb.method_class_names=\"abc\" can be used. From version 2.7.1 all classes by default are not accessible except those in java.lang.Math and need to be manually enabled.",
           "Severity": "CRITICAL",
@@ -14226,8 +14248,8 @@
           "FixedVersion": "3.5.6",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26945",
@@ -14236,7 +14258,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:0d564ad15a5d1a836b2d4e76d0e541f60bf4fda671ab8e3dbef549179ef8825f",
+          "Fingerprint": "sha256:690dd3895dfdd4530719bfc0a8b2b26e0c94983b4989b69d42dcfab0b03c0095",
           "Title": "mybatis: mishandles deserialization of object streams which could result in remote code execution",
           "Description": "MyBatis before 3.5.6 mishandles deserialization of object streams.",
           "Severity": "HIGH",
@@ -14290,8 +14312,8 @@
           "FixedVersion": "3.5.6",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26945",
@@ -14300,7 +14322,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:0d564ad15a5d1a836b2d4e76d0e541f60bf4fda671ab8e3dbef549179ef8825f",
+          "Fingerprint": "sha256:690dd3895dfdd4530719bfc0a8b2b26e0c94983b4989b69d42dcfab0b03c0095",
           "Title": "mybatis: mishandles deserialization of object streams which could result in remote code execution",
           "Description": "MyBatis before 3.5.6 mishandles deserialization of object streams.",
           "Severity": "HIGH",
@@ -14354,8 +14376,8 @@
           "FixedVersion": "5.2.20.RELEASE, 5.3.18",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22965",
@@ -14364,7 +14386,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:f1bb58afee73b6c4372a7fec9e1785cdd6ce95c40ab01810ff7e314507632b5b",
+          "Fingerprint": "sha256:69eb3885879c71f9a1fdf259d3f42eeb5c20962263ec9972136eb7954eaea364",
           "Title": "spring-framework: RCE via Data Binding on JDK 9+",
           "Description": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
           "Severity": "CRITICAL",
@@ -14439,8 +14461,8 @@
           "FixedVersion": "5.2.20.RELEASE, 5.3.18",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22965",
@@ -14449,7 +14471,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:f1bb58afee73b6c4372a7fec9e1785cdd6ce95c40ab01810ff7e314507632b5b",
+          "Fingerprint": "sha256:69eb3885879c71f9a1fdf259d3f42eeb5c20962263ec9972136eb7954eaea364",
           "Title": "spring-framework: RCE via Data Binding on JDK 9+",
           "Description": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
           "Severity": "CRITICAL",
@@ -14524,8 +14546,8 @@
           "FixedVersion": "5.2.22.RELEASE, 5.3.20",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22970",
@@ -14534,7 +14556,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:1f08775192ebb5018a9ce4d1191775f6c34dd8517576bc3c96f5c708573f8610",
+          "Fingerprint": "sha256:e5ecc3f790e0eb63c5214bb7ba4a567b6c2f37ed1cf97f094961df5fbddb08df",
           "Title": "springframework: DoS via data binding to multipartFile or servlet part",
           "Description": "In spring framework versions prior to 5.3.20+ , 5.2.22+ and old unsupported versions, applications that handle file uploads are vulnerable to DoS attack if they rely on data binding to set a MultipartFile or javax.servlet.Part to a field in a model object.",
           "Severity": "HIGH",
@@ -14592,8 +14614,8 @@
           "FixedVersion": "5.2.22.RELEASE, 5.3.20",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22970",
@@ -14602,7 +14624,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:1f08775192ebb5018a9ce4d1191775f6c34dd8517576bc3c96f5c708573f8610",
+          "Fingerprint": "sha256:e5ecc3f790e0eb63c5214bb7ba4a567b6c2f37ed1cf97f094961df5fbddb08df",
           "Title": "springframework: DoS via data binding to multipartFile or servlet part",
           "Description": "In spring framework versions prior to 5.3.20+ , 5.2.22+ and old unsupported versions, applications that handle file uploads are vulnerable to DoS attack if they rely on data binding to set a MultipartFile or javax.servlet.Part to a field in a model object.",
           "Severity": "HIGH",
@@ -14660,8 +14682,8 @@
           "FixedVersion": "5.3.19, 5.2.21.RELEASE",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22968",
@@ -14670,7 +14692,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:cc7dd216e1fc2f6149fc2ae4f119ff836f5193e105dadc14ad0780df639ecca3",
+          "Fingerprint": "sha256:8612b31a08d5c3c1597e19b8a7ad03ac27c6069b290a492c6ac3aad26a0383e4",
           "Title": "Framework: Data Binding Rules Vulnerability",
           "Description": "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
           "Severity": "HIGH",
@@ -14728,8 +14750,8 @@
           "FixedVersion": "5.3.19, 5.2.21.RELEASE",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22968",
@@ -14738,7 +14760,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:cc7dd216e1fc2f6149fc2ae4f119ff836f5193e105dadc14ad0780df639ecca3",
+          "Fingerprint": "sha256:8612b31a08d5c3c1597e19b8a7ad03ac27c6069b290a492c6ac3aad26a0383e4",
           "Title": "Framework: Data Binding Rules Vulnerability",
           "Description": "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
           "Severity": "HIGH",
@@ -14796,8 +14818,8 @@
           "FixedVersion": "4.3.15, 5.0.5",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1272",
@@ -14806,7 +14828,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:63ff40cd328f45ba90a35e4f10be18edd92110f3ae4d0e0d53cab1498c69f70e",
+          "Fingerprint": "sha256:fb11f22a74038673b9cda35e34935d6a0d7af54eb6f2bdbe76e24480d98acfaa",
           "Title": "spring-framework: Multipart content pollution",
           "Description": "Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, provide client-side support for multipart requests. When Spring MVC or Spring WebFlux server application (server A) receives input from a remote client, and then uses that input to make a multipart request to another server (server B), it can be exposed to an attack, where an extra multipart is inserted in the content of the request from server A, causing server B to use the wrong value for a part it expects. This could to lead privilege escalation, for example, if the part content represents a username or user roles.",
           "Severity": "HIGH",
@@ -14867,8 +14889,8 @@
           "FixedVersion": "4.3.15, 5.0.5",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1272",
@@ -14877,7 +14899,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:63ff40cd328f45ba90a35e4f10be18edd92110f3ae4d0e0d53cab1498c69f70e",
+          "Fingerprint": "sha256:fb11f22a74038673b9cda35e34935d6a0d7af54eb6f2bdbe76e24480d98acfaa",
           "Title": "spring-framework: Multipart content pollution",
           "Description": "Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, provide client-side support for multipart requests. When Spring MVC or Spring WebFlux server application (server A) receives input from a remote client, and then uses that input to make a multipart request to another server (server B), it can be exposed to an attack, where an extra multipart is inserted in the content of the request from server A, causing server B to use the wrong value for a part it expects. This could to lead privilege escalation, for example, if the part content represents a username or user roles.",
           "Severity": "HIGH",
@@ -14938,8 +14960,8 @@
           "FixedVersion": "5.1.1.RELEASE, 5.0.10.RELEASE, 4.3.20.RELEASE",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-15756",
@@ -14948,7 +14970,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:e036bda08595490c1285d48beeb2643d51a4bbd910d454fb397c985f685a040c",
+          "Fingerprint": "sha256:4c4ece7dcd11a88371b74cf7c5057c76c88b4b0f3e791df0ec88e09c6ff87f80",
           "Title": "springframework: DoS Attack via Range Requests",
           "Description": "Spring Framework, version 5.1, versions 5.0.x prior to 5.0.10, versions 4.3.x prior to 4.3.20, and older unsupported versions on the 4.2.x branch provide support for range requests when serving static resources through the ResourceHttpRequestHandler, or starting in 5.0 when an annotated controller returns an org.springframework.core.io.Resource. A malicious user (or attacker) can add a range header with a high number of ranges, or with wide ranges that overlap, or both, for a denial of service attack. This vulnerability affects applications that depend on either spring-webmvc or spring-webflux. Such applications must also have a registration for serving static resources (e.g. JS, CSS, images, and others), or have an annotated controller that returns an org.springframework.core.io.Resource. Spring Boot applications that depend on spring-boot-starter-web or spring-boot-starter-webflux are ready to serve static resources out of the box and are therefore vulnerable.",
           "Severity": "HIGH",
@@ -15018,8 +15040,8 @@
           "FixedVersion": "5.1.1.RELEASE, 5.0.10.RELEASE, 4.3.20.RELEASE",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-15756",
@@ -15028,7 +15050,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:e036bda08595490c1285d48beeb2643d51a4bbd910d454fb397c985f685a040c",
+          "Fingerprint": "sha256:4c4ece7dcd11a88371b74cf7c5057c76c88b4b0f3e791df0ec88e09c6ff87f80",
           "Title": "springframework: DoS Attack via Range Requests",
           "Description": "Spring Framework, version 5.1, versions 5.0.x prior to 5.0.10, versions 4.3.x prior to 4.3.20, and older unsupported versions on the 4.2.x branch provide support for range requests when serving static resources through the ResourceHttpRequestHandler, or starting in 5.0 when an annotated controller returns an org.springframework.core.io.Resource. A malicious user (or attacker) can add a range header with a high number of ranges, or with wide ranges that overlap, or both, for a denial of service attack. This vulnerability affects applications that depend on either spring-webmvc or spring-webflux. Such applications must also have a registration for serving static resources (e.g. JS, CSS, images, and others), or have an annotated controller that returns an org.springframework.core.io.Resource. Spring Boot applications that depend on spring-boot-starter-web or spring-boot-starter-webflux are ready to serve static resources out of the box and are therefore vulnerable.",
           "Severity": "HIGH",
@@ -15098,8 +15120,8 @@
           "FixedVersion": "6.0.8, 5.3.27, 5.2.24.RELEASE",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-20863",
@@ -15108,7 +15130,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:e080ca923737dfb04292d48c933922bede43497b159a3ffb56160da40a22dfc1",
+          "Fingerprint": "sha256:a482d87edc1f418f168b828356667556d1a0571a5db8573bcd53e7b9c4490bc2",
           "Title": "springframework: Spring Expression DoS Vulnerability",
           "Description": "In spring framework versions prior to 5.2.24 release+ ,5.3.27+ and 6.0.8+ , it is possible for a user to provide a specially crafted SpEL expression that may cause a denial-of-service (DoS) condition.",
           "Severity": "HIGH",
@@ -15165,8 +15187,8 @@
           "FixedVersion": "6.0.8, 5.3.27, 5.2.24.RELEASE",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-20863",
@@ -15175,7 +15197,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:e080ca923737dfb04292d48c933922bede43497b159a3ffb56160da40a22dfc1",
+          "Fingerprint": "sha256:a482d87edc1f418f168b828356667556d1a0571a5db8573bcd53e7b9c4490bc2",
           "Title": "springframework: Spring Expression DoS Vulnerability",
           "Description": "In spring framework versions prior to 5.2.24 release+ ,5.3.27+ and 6.0.8+ , it is possible for a user to provide a specially crafted SpEL expression that may cause a denial-of-service (DoS) condition.",
           "Severity": "HIGH",
@@ -15231,8 +15253,8 @@
           "InstalledVersion": "4.3.4.RELEASE",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41849",
@@ -15241,7 +15263,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:501e4678fe40c1776263b98da67c8d0d52319657c2c118b5ee628e5441ce4c09",
+          "Fingerprint": "sha256:185c73eb0fc06626e02f9eed7eb4385a5d2d5004c98cf09e9e3544bec0098786",
           "Title": "spring-framework: Spring Framework: Denial of Service via integer overflow in SpEL",
           "Description": "An integer overflow vulnerability exists in the evaluation logic of the Spring Expression Language (SpEL). An attacker can exploit this by supplying a specially crafted SpEL expression that triggers excessive resource consumption, resulting in a Denial of Service (DoS).\n\nAffected versions:\nSpring Framework 5.3.0 through 5.3.48.",
           "Severity": "HIGH",
@@ -15286,8 +15308,8 @@
           "InstalledVersion": "4.3.4.RELEASE",
           "Status": "affected",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41849",
@@ -15296,7 +15318,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:501e4678fe40c1776263b98da67c8d0d52319657c2c118b5ee628e5441ce4c09",
+          "Fingerprint": "sha256:185c73eb0fc06626e02f9eed7eb4385a5d2d5004c98cf09e9e3544bec0098786",
           "Title": "spring-framework: Spring Framework: Denial of Service via integer overflow in SpEL",
           "Description": "An integer overflow vulnerability exists in the evaluation logic of the Spring Expression Language (SpEL). An attacker can exploit this by supplying a specially crafted SpEL expression that triggers excessive resource consumption, resulting in a Denial of Service (DoS).\n\nAffected versions:\nSpring Framework 5.3.0 through 5.3.48.",
           "Severity": "HIGH",
@@ -15342,8 +15364,8 @@
           "FixedVersion": "7.0.8, 6.2.19",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41850",
@@ -15352,7 +15374,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:4dbcfcfb994b4fab42d61b3adee9a43d0d47c671fbe534c4c47b74ca432302e5",
+          "Fingerprint": "sha256:fba451aab130021abe462e0d29d4fb9cafd82e87988b2bee468abf672dd90af7",
           "Title": "spring-framework: Spring Framework: Denial of Service via specially crafted SpEL expressions",
           "Description": "Applications that evaluate user-supplied Spring Expression Language (SpEL) expressions are vulnerable to an Algorithmic Denial of Service (DoS). By providing a specially crafted expression, an attacker can trigger excessive resource consumption during evaluation, leading to application degradation or unavailability.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
           "Severity": "HIGH",
@@ -15400,8 +15422,8 @@
           "FixedVersion": "7.0.8, 6.2.19",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41850",
@@ -15410,7 +15432,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:4dbcfcfb994b4fab42d61b3adee9a43d0d47c671fbe534c4c47b74ca432302e5",
+          "Fingerprint": "sha256:fba451aab130021abe462e0d29d4fb9cafd82e87988b2bee468abf672dd90af7",
           "Title": "spring-framework: Spring Framework: Denial of Service via specially crafted SpEL expressions",
           "Description": "Applications that evaluate user-supplied Spring Expression Language (SpEL) expressions are vulnerable to an Algorithmic Denial of Service (DoS). By providing a specially crafted expression, an attacker can trigger excessive resource consumption during evaluation, leading to application degradation or unavailability.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
           "Severity": "HIGH",
@@ -15458,8 +15480,8 @@
           "FixedVersion": "6.0.0",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1000027",
@@ -15468,7 +15490,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:16d9e0e2510068210cd0cae42261fb58d0f7c2ee3e244a8e8e94b0981ed1663c",
+          "Fingerprint": "sha256:1dbf4c89c88af48cbd6de5ad1d5255ab614673c2ee6a884b8d3a56d7136907e1",
           "Title": "spring: HttpInvokerServiceExporter readRemoteInvocation method untrusted java deserialization",
           "Description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
           "Severity": "CRITICAL",
@@ -15539,8 +15561,8 @@
           "FixedVersion": "6.0.0",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1000027",
@@ -15549,7 +15571,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:16d9e0e2510068210cd0cae42261fb58d0f7c2ee3e244a8e8e94b0981ed1663c",
+          "Fingerprint": "sha256:1dbf4c89c88af48cbd6de5ad1d5255ab614673c2ee6a884b8d3a56d7136907e1",
           "Title": "spring: HttpInvokerServiceExporter readRemoteInvocation method untrusted java deserialization",
           "Description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
           "Severity": "CRITICAL",
@@ -15620,8 +15642,8 @@
           "FixedVersion": "6.1.4, 6.0.17, 5.3.32",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22243",
@@ -15630,7 +15652,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:af029ba68f62d760d31506ea34178670f30858c62318d1a174f9b28d9033b088",
+          "Fingerprint": "sha256:bf3587c5ebae9a34eadd5ae5055b1c8982c1cd5d5fc50e50dfcf37d48e7737e7",
           "Title": "springframework: URL Parsing with Host Validation",
           "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.",
           "Severity": "HIGH",
@@ -15680,8 +15702,8 @@
           "FixedVersion": "6.1.4, 6.0.17, 5.3.32",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22243",
@@ -15690,7 +15712,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:af029ba68f62d760d31506ea34178670f30858c62318d1a174f9b28d9033b088",
+          "Fingerprint": "sha256:bf3587c5ebae9a34eadd5ae5055b1c8982c1cd5d5fc50e50dfcf37d48e7737e7",
           "Title": "springframework: URL Parsing with Host Validation",
           "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.",
           "Severity": "HIGH",
@@ -15740,8 +15762,8 @@
           "FixedVersion": "6.1.5, 6.0.18, 5.3.33",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22259",
@@ -15750,7 +15772,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:f7be48009943cdd1519032ea31af506445c9c35e747c1087fafa8ade7b33262a",
+          "Fingerprint": "sha256:61f9d0b9625e2d979c5028ee552faf9762d160c78677a3e1700a10a6646e35e3",
           "Title": "springframework: URL Parsing with Host Validation",
           "Description": "Applications that use UriComponentsBuilder in Spring Framework to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
           "Severity": "HIGH",
@@ -15801,8 +15823,8 @@
           "FixedVersion": "6.1.5, 6.0.18, 5.3.33",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22259",
@@ -15811,7 +15833,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:f7be48009943cdd1519032ea31af506445c9c35e747c1087fafa8ade7b33262a",
+          "Fingerprint": "sha256:61f9d0b9625e2d979c5028ee552faf9762d160c78677a3e1700a10a6646e35e3",
           "Title": "springframework: URL Parsing with Host Validation",
           "Description": "Applications that use UriComponentsBuilder in Spring Framework to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
           "Severity": "HIGH",
@@ -15862,8 +15884,8 @@
           "FixedVersion": "5.3.34, 6.0.19, 6.1.6",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:43eee5310b208ec69e0ea5f1251612e9fc3e41b735956da2a8164b2f21c620d5",
-            "DiffID": "sha256:9e789cb8476f0f41edee45cabca8fb6b01041b79538eb88acde28d0eae0b9e76"
+            "Digest": "sha256:a1a28f7b9a08323d2b4d89f5b2463a85ff2cf6ceb2c5cbf195b51eaa2f38bbbf",
+            "DiffID": "sha256:c3c92be885319e2b241d69dcbf702d748720db4b21cd5330dfcce0efc4f18d98"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22262",
@@ -15872,7 +15894,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:8886a7f2064ee22e154f2f95509c96e57d674f25b8862c487a0f1c8817ccba72",
+          "Fingerprint": "sha256:be324776c4ee03314c14d5556d07d8729732d6c4fabd23dbe56f85c179124193",
           "Title": "springframework: URL Parsing with Host Validation",
           "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22259 https://spring.io/security/cve-2024-22259  and  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
           "Severity": "HIGH",
@@ -15922,8 +15944,8 @@
           "FixedVersion": "5.3.34, 6.0.19, 6.1.6",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:09077993ad92d29561969c1241a45684e6498cf4f713edf931ae3f5dde7ae404",
-            "DiffID": "sha256:e7aa07f8f128581905877c8ed987f421193dbfe17a605fc897ecd03336351cfd"
+            "Digest": "sha256:642c056b13d96c12e11b9609910085eb65ae08c55d671117485146ed2ed67caa",
+            "DiffID": "sha256:1891a3f4d507fc1a63c330217992ceeef6444fc0226ddbba90f6c9bd9e14adcc"
           },
           "SeveritySource": "ghsa",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22262",
@@ -15932,7 +15954,7 @@
             "Name": "GitHub Security Advisory Maven",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
           },
-          "Fingerprint": "sha256:8886a7f2064ee22e154f2f95509c96e57d674f25b8862c487a0f1c8817ccba72",
+          "Fingerprint": "sha256:be324776c4ee03314c14d5556d07d8729732d6c4fabd23dbe56f85c179124193",
           "Title": "springframework: URL Parsing with Host Validation",
           "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22259 https://spring.io/security/cve-2024-22259  and  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
           "Severity": "HIGH",

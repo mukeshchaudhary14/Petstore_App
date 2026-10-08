@@ -1,0 +1,1868 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.75.0"
+  },
+  "ReportID": "01a11a15-e597-72db-9906-3628cf7cc51c",
+  "CreatedAt": "2026-10-08T05:56:45.079190475Z",
+  "ArtifactID": "sha256:515b95c323a7b2e20aa040ec24ec1b8c7a19624cab484fa0fe4e73b3af3878a0",
+  "ArtifactName": ".",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "https://github.com/mukeshchaudhary14/Petstore_App.git",
+    "Branch": "main",
+    "Commit": "8163f148435a95b30207d1e57a57e812063838fc",
+    "CommitMsg": "feat(devops): add Docker, Compose, Trivy, Jenkinsfile, Kubernetes, Helm, Helm Dashboard, and ArgoCD setup",
+    "Author": "mukeshchaudhary14 \u003cmukesh.chaudhary.1716@gmail.com\u003e",
+    "Committer": "mukeshchaudhary14 \u003cmukesh.chaudhary.1716@gmail.com\u003e"
+  },
+  "Results": [
+    {
+      "Target": "pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "org.mybatis:jpetstore:6.0.2::b9684ae7",
+          "Name": "org.mybatis:jpetstore",
+          "Identifier": {
+            "PURL": "pkg:maven/org.mybatis/jpetstore@6.0.2",
+            "UID": "43490c35daf9eb67"
+          },
+          "Version": "6.0.2",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "root",
+          "DependsOn": [
+            "javax.servlet:jstl:1.2::91df7c08",
+            "log4j:log4j:1.2.17::dbc5999b",
+            "net.sourceforge.stripes:stripes:1.6.0::8bc332eb",
+            "ognl:ognl:3.1.12::952aadf7",
+            "org.hsqldb:hsqldb:2.3.4::c008124f",
+            "org.mybatis:mybatis-spring:1.3.0::9d69d6aa",
+            "org.mybatis:mybatis:3.4.1::58a4de7e",
+            "org.springframework:spring-jdbc:4.3.4.RELEASE::b29aa883",
+            "org.springframework:spring-web:4.3.4.RELEASE::572b411f"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "javax.servlet:jstl:1.2::91df7c08",
+          "Name": "javax.servlet:jstl",
+          "Identifier": {
+            "PURL": "pkg:maven/javax.servlet/jstl@1.2",
+            "UID": "c54a824c8c43890e"
+          },
+          "Version": "1.2",
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 90,
+              "EndLine": 94
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "log4j:log4j:1.2.17::dbc5999b",
+          "Name": "log4j:log4j",
+          "Identifier": {
+            "PURL": "pkg:maven/log4j/log4j@1.2.17",
+            "UID": "96d298c8e7042e25"
+          },
+          "Version": "1.2.17",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 101,
+              "EndLine": 105
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "net.sourceforge.stripes:stripes:1.6.0::8bc332eb",
+          "Name": "net.sourceforge.stripes:stripes",
+          "Identifier": {
+            "PURL": "pkg:maven/net.sourceforge.stripes/stripes@1.6.0",
+            "UID": "c9d6bc41e421a730"
+          },
+          "Version": "1.6.0",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "commons-logging:commons-logging:1.1.3::6e144862",
+            "log4j:log4j:1.2.17::dbc5999b"
+          ],
+          "Locations": [
+            {
+              "StartLine": 85,
+              "EndLine": 89
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "ognl:ognl:3.1.12::952aadf7",
+          "Name": "ognl:ognl",
+          "Identifier": {
+            "PURL": "pkg:maven/ognl/ognl@3.1.12",
+            "UID": "99ddfc108a3d1e1f"
+          },
+          "Version": "3.1.12",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "org.javassist:javassist:3.20.0-GA::62438ae4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 60,
+              "EndLine": 64
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.hsqldb:hsqldb:2.3.4::c008124f",
+          "Name": "org.hsqldb:hsqldb",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hsqldb/hsqldb@2.3.4",
+            "UID": "2c9f8d555fb305f3"
+          },
+          "Version": "2.3.4",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 106,
+              "EndLine": 110
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.mybatis:mybatis:3.4.1::58a4de7e",
+          "Name": "org.mybatis:mybatis",
+          "Identifier": {
+            "PURL": "pkg:maven/org.mybatis/mybatis@3.4.1",
+            "UID": "96d18d6bac8e8cea"
+          },
+          "Version": "3.4.1",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 65,
+              "EndLine": 69
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.mybatis:mybatis-spring:1.3.0::9d69d6aa",
+          "Name": "org.mybatis:mybatis-spring",
+          "Identifier": {
+            "PURL": "pkg:maven/org.mybatis/mybatis-spring@1.3.0",
+            "UID": "9bf136dc0db05be7"
+          },
+          "Version": "1.3.0",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 70,
+              "EndLine": 74
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-jdbc:4.3.4.RELEASE::b29aa883",
+          "Name": "org.springframework:spring-jdbc",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-jdbc@4.3.4.RELEASE",
+            "UID": "5e504c2c1cbd5055"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+            "org.springframework:spring-core:4.3.4.RELEASE::c9404c84",
+            "org.springframework:spring-tx:4.3.4.RELEASE::456ba3ab"
+          ],
+          "Locations": [
+            {
+              "StartLine": 75,
+              "EndLine": 79
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-web:4.3.4.RELEASE::572b411f",
+          "Name": "org.springframework:spring-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@4.3.4.RELEASE",
+            "UID": "8ddc8c1b0bc4eed2"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "DependsOn": [
+            "org.springframework:spring-aop:4.3.4.RELEASE::ff8f8d23",
+            "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+            "org.springframework:spring-context:4.3.4.RELEASE::266ec700",
+            "org.springframework:spring-core:4.3.4.RELEASE::c9404c84"
+          ],
+          "Locations": [
+            {
+              "StartLine": 80,
+              "EndLine": 84
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "commons-logging:commons-logging:1.1.3::6e144862",
+          "Name": "commons-logging:commons-logging",
+          "Identifier": {
+            "PURL": "pkg:maven/commons-logging/commons-logging@1.1.3",
+            "UID": "aa11e3c1fe834c7"
+          },
+          "Version": "1.1.3",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.javassist:javassist:3.20.0-GA::62438ae4",
+          "Name": "org.javassist:javassist",
+          "Identifier": {
+            "PURL": "pkg:maven/org.javassist/javassist@3.20.0-GA",
+            "UID": "f20e3498ba03e414"
+          },
+          "Version": "3.20.0-GA",
+          "Licenses": [
+            "MPL-1.1",
+            "LGPL-2.1-only",
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-aop:4.3.4.RELEASE::ff8f8d23",
+          "Name": "org.springframework:spring-aop",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-aop@4.3.4.RELEASE",
+            "UID": "b3d49106058934a0"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+            "org.springframework:spring-core:4.3.4.RELEASE::c9404c84"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+          "Name": "org.springframework:spring-beans",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-beans@4.3.4.RELEASE",
+            "UID": "cead760c90a37b02"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "org.springframework:spring-core:4.3.4.RELEASE::c9404c84"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-context:4.3.4.RELEASE::266ec700",
+          "Name": "org.springframework:spring-context",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-context@4.3.4.RELEASE",
+            "UID": "4e0295eb9ce2a79a"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "org.springframework:spring-aop:4.3.4.RELEASE::ff8f8d23",
+            "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+            "org.springframework:spring-core:4.3.4.RELEASE::c9404c84",
+            "org.springframework:spring-expression:4.3.4.RELEASE::b9073f93"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-core:4.3.4.RELEASE::c9404c84",
+          "Name": "org.springframework:spring-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-core@4.3.4.RELEASE",
+            "UID": "9943fe0acf97d2ba"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "commons-logging:commons-logging:1.1.3::6e144862"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-expression:4.3.4.RELEASE::b9073f93",
+          "Name": "org.springframework:spring-expression",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-expression@4.3.4.RELEASE",
+            "UID": "a14eeba892cd19ce"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "org.springframework:spring-core:4.3.4.RELEASE::c9404c84"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "org.springframework:spring-tx:4.3.4.RELEASE::456ba3ab",
+          "Name": "org.springframework:spring-tx",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-tx@4.3.4.RELEASE",
+            "UID": "edf95692eb316003"
+          },
+          "Version": "4.3.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Indirect": true,
+          "Relationship": "indirect",
+          "DependsOn": [
+            "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+            "org.springframework:spring-core:4.3.4.RELEASE::c9404c84"
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2019-17571",
+          "VendorIDs": [
+            "GHSA-2qrg-x229-3v8q"
+          ],
+          "PkgID": "log4j:log4j:1.2.17::dbc5999b",
+          "PkgName": "log4j:log4j",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/log4j/log4j@1.2.17",
+            "UID": "96d298c8e7042e25"
+          },
+          "InstalledVersion": "1.2.17",
+          "Status": "affected",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17571",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:13c3eaa7a6ed7e3d4ed65c546baa9a24b2c9e841ba86feb36b95c5044e9097a7",
+          "Title": "log4j: deserialization of untrusted data in SocketServer",
+          "Description": "Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "ghsa": 4,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00022.html",
+            "https://access.redhat.com/security/cve/CVE-2019-17571",
+            "https://linux.oracle.com/cve/CVE-2019-17571.html",
+            "https://linux.oracle.com/errata/ELSA-2017-2423.html",
+            "https://lists.apache.org/thread.html/277b4b5c2b0e06a825ccec565fa65bd671f35a4d58e3e2ec5d0618e1@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/44491fb9cc19acc901f7cff34acb7376619f15638439416e3e14761c@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/479471e6debd608c837b9815b76eab24676657d4444fcfd5ef96d6e6@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/564f03b4e9511fcba29c68fc0299372dadbdb002718fa8edcc4325e4@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/6114ce566200d76e3cc45c521a62c2c5a4eac15738248f58a99f622c@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/752ec92cd1e334a639e79bfbd689a4ec2c6579ec5bb41b53ffdf358d@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/8ab32b4c9f1826f20add7c40be08909de9f58a89dc1de9c09953f5ac@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/eea03d504b36e8f870e8321d908e1def1addda16adda04327fe7c125@%3Cdev.logging.apache.org%3E",
+            "https://lists.apache.org/thread.html/r05755112a8c164abc1004bb44f198b1e3d8ca3d546a8f13ebd3aa05f@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r107c8737db39ec9ec4f4e7147b249e29be79170b9ef4b80528105a2d@%3Cdev.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r13d4b5c60ff63f3c4fab51d6ff266655be503b8a1884e2f2fab67c3a@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/r189aaeaad897f7d6b96f7c43a8ef2dfb9f6e9f8c1cc9ad182ce9b9ae@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r18f1c010b554a3a2d761e8ffffd8674fd4747bcbcf16c643d708318c@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r1b7734dfdfd938640f2f5fb6f4231a267145c71ed60cc7faa1cbac07@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/r26244f9f7d9a8a27a092eb0b2a0ca9395e88fcde8b5edaeca7ce569c@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2756fd570b6709d55a61831ca028405bcb3e312175a60bc5d911c81f@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2ce8d26154bea939536e6cf27ed02d3192bf5c5d04df885a80fe89b3@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2ff63f210842a3c5e42f03a35d8f3a345134d073c80a04077341c211@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3543ead2317dcd3306f69ee37b07dd383dbba6e2f47ff11eb55879ad@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r356d57d6225f91fdc30f8b0a2bed229d1ece55e16e552878c5fa809a@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3784834e80df2f284577a5596340fb84346c91a2dea6a073e65e3397@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3a85514a518f3080ab1fc2652cfe122c2ccf67cfb32356acb1b08fe8@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3bf7b982dfa0779f8a71f843d2aa6b4184a53e6be7f149ee079387fd@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3c575cabc7386e646fb12cb82b0b38ae5a6ade8a800f827107824495@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3cf50d05ce8cec8c09392624b7bae750e7643dae60ef2438641ee015@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r3d666e4e8905157f3c046d31398b04f2bfd4519e31f266de108c6919@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r48d5019bd42e0770f7e5351e420a63a41ff1f16924942442c6aff6a8@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r48efc7cb5aeb4e1f67aaa06fb4b5479a5635d12f07d0b93fc2d08809@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r4ac89cbecd9e298ae9fafb5afda6fa77ac75c78d1ac957837e066c4e@%3Cuser.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r4b25538be50126194cc646836c718b1a4d8f71bd9c912af5b59134ad@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/r52a5129df402352adc34d052bab9234c8ef63596306506a89fdc7328@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r594411f4bddebaf48a4c70266d0b7849e0d82bb72826f61b3a35bba7@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5c084578b3e3b40bd903c9d9e525097421bcd88178e672f612102eb2@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61590890edcc64140e0c606954b29a063c3d08a2b41d447256d51a78@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6236b5f8646d48af8b66d5050f288304016840788e508c883356fe0e@%3Clog4j-user.logging.apache.org%3E",
+            "https://lists.apache.org/thread.html/r681b4432d0605f327b68b9f8a42662993e699d04614de4851c35ffd1@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/r696507338dd5f44efc23d98cafe30f217cf3ba78e77ed1324c7a5179@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6aec6b8f70167fa325fb98b3b5c9ce0ffaed026e697b69b85ac24628@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6b45a2fcc8e98ac93a179183dbb7f340027bdb8e3ab393418076b153@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/r6d34da5a0ca17ab08179a30c971446c7421af0e96f6d60867eabfc52@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r71e26f9c2d5826c6f95ad60f7d052d75e1e70b0d2dd853db6fc26d5f@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r746fbc3fc13aee292ae6851f7a5080f592fa3a67b983c6887cdb1fc5@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7a1acc95373105169bd44df710c2f462cad31fb805364d2958a5ee03@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7bcdc710857725c311b856c0b82cee6207178af5dcde1bd43d289826@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r7f462c69d5ded4c0223e014d95a3496690423c5f6f05c09e2f2a407a@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8418a0dff1729f19cf1024937e23a2db4c0f94f2794a423f5c10e8e7@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8890b8f18f1de821595792b58b968a89692a255bc20d86d395270740@%3Ccommits.druid.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8a1cfd4705258c106e488091fcec85f194c82f2bbde6bd151e201870@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8c392ca48bb7e50754e4bc05865e9731b23d568d18a520fe3d8c1f75@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8c6300245c0bcef095e9f07b48157e2c6471df0816db3408fcf1d748@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8d78a0fbb56d505461e29868d1026e98c402e6a568c13a6da67896a2@%3Cdev.jena.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8e3f7da12bf5750b0a02e69a78a61073a2ac950eed7451ce70a65177@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r909b8e3a36913944d3b7bafe9635d4ca84f8f0e2cd146a1784f667c2@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r90c23eb8c82835fa82df85ae5e88c81fd9241e20a22971b0fb8f2c34@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r944183c871594fe9a555b8519a7c945bbcf6714d72461aa6c929028f@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9a9e3b42cd5d1c4536a14ef04f75048dec8e2740ac6a138ea912177f@%3Cpluto-dev.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9d0d03f2e7d9e13c68b530f81d02b0fec33133edcf27330d8089fcfb@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9d2e28e71f91ba0b6f4114c8ecd96e2b1f7e0d06bdf8eb768c183aa9@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9dc2505651788ac668299774d9e7af4dc616be2f56fdc684d1170882@%3Cusers.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/r9fb3238cfc3222f2392ca6517353aadae18f76866157318ac562e706@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra18a903f785aed9403aea38bc6f36844a056283c00dcfc6936b6318c@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra38785cfc0e7f17f8e24bebf775dd032c033fadcaea29e5bc9fffc60@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra54fa49be3e773d99ccc9c2a422311cf77e3ecd3b8594ee93043a6b1@%3Cdev.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra9611a8431cb62369bce8909d7645597e1dd45c24b448836b1e54940@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/raedd12dc24412b3780432bf202a2618a21a727788543e5337a458ead@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/rb1b29aee737e1c37fe1d48528cb0febac4f5deed51f5412e6fdfe2bf@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/rb3c94619728c8f8c176d8e175e0a1086ca737ecdfcd5a2214bb768bc@%3Ccommits.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbc45eb0f53fd6242af3e666c2189464f848a851d408289840cecc6e3@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbd19de368abf0764e4383ec44d527bc9870176f488a494f09a40500d@%3Ccommon-dev.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbdf18e39428b5c80fc35113470198b1fe53b287a76a46b0f8780b5fd@%3Cdev.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cdev.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc17d8491beee51607693019857e41e769795366b85be00aa2f4b3159@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc1eaed7f7d774d5d02f66e49baced31e04827a1293d61a70bd003ca7@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc628307962ae1b8cc2d21b8e4b7dd6d7755b2dd52fa56a151a27e4fd@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rca24a281000fb681d7e26e5c031a21eb4b0593a7735f781b53dae4e2@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/rcd71280585425dad7e232f239c5709e425efdd0d3de4a92f808a4767@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26@%3Ccommits.pulsar.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd3a9511eebab60e23f224841390a3f8cd5358cff605c5f7042171e47@%3Cdev.tinkerpop.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd5dbeee4808c0f2b9b51479b50de3cc6adb1072c332a200d9107f13e@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd6254837403e8cbfc7018baa9be29705f3f06bd007c83708f9a97679@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd7805c1bf9388968508c6c8f84588773216e560055ddcc813d19f347@%3Ccommon-issues.hadoop.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd882ab6b642fe59cbbe94dc02bd197342058208f482e57b537940a4b@%3Cpluto-dev.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/rda4849c6823dd3e83c7a356eb883180811d5c28359fe46865fd151c3@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rdb7ddf28807e27c7801f6e56a0dfb31092d34c61bdd4fa2de9182119@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rdec0d8ac1f03e6905b0de2df1d5fcdb98b94556e4f6cccf7519fdb26@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/rdf2a0d94c3b5b523aeff7741ae71347415276062811b687f30ea6573@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/re36da78e4f3955ba6c1c373a2ab85a4deb215ca74b85fcd66142fea1@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/re8c21ed9dd218c217d242ffa90778428e446b082b5e1c29f567e8374@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/reaf6b996f74f12b4557bc221abe88f58270ac583942fa41293c61f94@%3Cpluto-scm.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/rec34b1cccf907898e7cb36051ffac3ccf1ea89d0b261a2a3b3fb267f@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf1b434e11834a4449cd7addb69ed0aef0923112b5938182b363a968c@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf2567488cfc9212b42e34c6393cfa1c14e30e4838b98dda84d71041f@%3Cdev.tika.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf53eeefb7e7e524deaacb9f8671cbf01b8a253e865fb94e7656722c0@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf77f79699c8d7e430c14cf480f12ed1297e6e8cf2ed379a425941e80@%3Cpluto-dev.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf9c19bcc2f7a98a880fa3e3456c003d331812b55836b34ef648063c9@%3Cjira.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfdf65fa675c64a64459817344e0e6c44d51ee264beea6e5851fb60dc@%3Cissues.bookkeeper.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2020/01/msg00008.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-17571",
+            "https://security.netapp.com/advisory/ntap-20200110-0001",
+            "https://security.netapp.com/advisory/ntap-20200110-0001/",
+            "https://ubuntu.com/security/notices/USN-4495-1",
+            "https://ubuntu.com/security/notices/USN-5998-1",
+            "https://usn.ubuntu.com/4495-1",
+            "https://usn.ubuntu.com/4495-1/",
+            "https://www.cve.org/CVERecord?id=CVE-2019-17571",
+            "https://www.debian.org/security/2020/dsa-4686",
+            "https://www.oracle.com/security-alerts/cpuApr2021.html",
+            "https://www.oracle.com/security-alerts/cpuapr2020.html",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2020.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2019-12-20T17:15:11.893Z",
+          "LastModifiedDate": "2026-06-17T02:24:11.027Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23305",
+          "VendorIDs": [
+            "GHSA-65fg-84f6-3jq3"
+          ],
+          "PkgID": "log4j:log4j:1.2.17::dbc5999b",
+          "PkgName": "log4j:log4j",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/log4j/log4j@1.2.17",
+            "UID": "96d298c8e7042e25"
+          },
+          "InstalledVersion": "1.2.17",
+          "Status": "affected",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23305",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:6184b944bad022d744a3d026df190f83411ee9bc260b7e41c597c801ce511752",
+          "Title": "log4j: SQL injection in Log4j 1.x when application is configured to use JDBCAppender",
+          "Description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-89"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "ghsa": 4,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/18/4",
+            "https://access.redhat.com/security/cve/CVE-2022-23305",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2031667",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041949",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041959",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4104",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23302",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23305",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23307",
+            "https://errata.almalinux.org/8/ALSA-2022-0290.html",
+            "https://errata.rockylinux.org/RLSA-2022:0290",
+            "https://github.com/apache/logging-log4j1",
+            "https://linux.oracle.com/cve/CVE-2022-23305.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9419.html",
+            "https://lists.apache.org/thread/pt6lh3pbsvxqlwlp4c5l798dv2hkc85y",
+            "https://logging.apache.org/log4j/1.2/index.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23305",
+            "https://security.netapp.com/advisory/ntap-20220217-0007",
+            "https://security.netapp.com/advisory/ntap-20220217-0007/",
+            "https://ubuntu.com/security/notices/USN-5998-1",
+            "https://ubuntu.com/security/notices/USN-7590-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23305",
+            "https://www.openwall.com/lists/oss-security/2022/01/18/4",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-01-18T16:15:08.35Z",
+          "LastModifiedDate": "2026-06-17T04:29:50.293Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23307",
+          "VendorIDs": [
+            "GHSA-f7vh-qwp3-x37m"
+          ],
+          "PkgID": "log4j:log4j:1.2.17::dbc5999b",
+          "PkgName": "log4j:log4j",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/log4j/log4j@1.2.17",
+            "UID": "96d298c8e7042e25"
+          },
+          "InstalledVersion": "1.2.17",
+          "Status": "affected",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23307",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:865ac36b10812b94a57237f6e9df79a0415d3242af3d8a715f029723bdd5c160",
+          "Title": "log4j: Unsafe deserialization flaw in Chainsaw log viewer",
+          "Description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "ghsa": 4,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 9,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-23307",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2031667",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041949",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041959",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4104",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23302",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23305",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23307",
+            "https://errata.almalinux.org/8/ALSA-2022-0290.html",
+            "https://errata.rockylinux.org/RLSA-2022:0290",
+            "https://linux.oracle.com/cve/CVE-2022-23307.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9419.html",
+            "https://lists.apache.org/thread/rg4yyc89vs3dw6kpy3r92xop9loywyhh",
+            "https://logging.apache.org/log4j/1.2/index.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23307",
+            "https://ubuntu.com/security/notices/USN-5998-1",
+            "https://ubuntu.com/security/notices/USN-7590-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23307",
+            "https://www.openwall.com/lists/oss-security/2022/01/18/5",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-01-18T16:15:08.403Z",
+          "LastModifiedDate": "2026-06-17T04:29:50.5Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-4104",
+          "VendorIDs": [
+            "GHSA-fp5r-v3w9-4333"
+          ],
+          "PkgID": "log4j:log4j:1.2.17::dbc5999b",
+          "PkgName": "log4j:log4j",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/log4j/log4j@1.2.17",
+            "UID": "96d298c8e7042e25"
+          },
+          "InstalledVersion": "1.2.17",
+          "Status": "affected",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-4104",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:fb1d6baa0cdafabf0645b83616ecf8fc6cafa157abc0b5a91da2c2f580b8a6d2",
+          "Title": "log4j: Remote code execution in Log4j 1.x when application is configured to use JMSAppender",
+          "Description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 2,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 2,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+            "https://access.redhat.com/security/cve/CVE-2021-4104",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2031667",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041949",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041959",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4104",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23302",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23305",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23307",
+            "https://errata.almalinux.org/8/ALSA-2022-0290.html",
+            "https://errata.rockylinux.org/RLSA-2022:0290",
+            "https://github.com/apache/logging-log4j2",
+            "https://github.com/apache/logging-log4j2/pull/608#issuecomment-990494126",
+            "https://github.com/apache/logging-log4j2/pull/608#issuecomment-991723301",
+            "https://linux.oracle.com/cve/CVE-2021-4104.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9056.html",
+            "https://lists.apache.org/thread/0x4zvtq92yggdgvwfgsftqrj4xx5w0nx",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-4104",
+            "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0033",
+            "https://security.gentoo.org/glsa/202209-02",
+            "https://security.gentoo.org/glsa/202310-16",
+            "https://security.gentoo.org/glsa/202312-02",
+            "https://security.gentoo.org/glsa/202312-04",
+            "https://security.netapp.com/advisory/ntap-20211223-0007",
+            "https://security.netapp.com/advisory/ntap-20211223-0007/",
+            "https://ubuntu.com/security/notices/USN-5223-1",
+            "https://ubuntu.com/security/notices/USN-5223-2",
+            "https://www.cve.org/CVERecord?id=CVE-2021-4104",
+            "https://www.cve.org/CVERecord?id=CVE-2021-44228",
+            "https://www.kb.cert.org/vuls/id/930724",
+            "https://www.openwall.com/lists/oss-security/2021/12/13/1",
+            "https://www.openwall.com/lists/oss-security/2021/12/13/2",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2021-12-14T12:15:12.2Z",
+          "LastModifiedDate": "2026-06-17T04:19:02.513Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23302",
+          "VendorIDs": [
+            "GHSA-w9p3-5cr8-m3jj"
+          ],
+          "PkgID": "log4j:log4j:1.2.17::dbc5999b",
+          "PkgName": "log4j:log4j",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/log4j/log4j@1.2.17",
+            "UID": "96d298c8e7042e25"
+          },
+          "InstalledVersion": "1.2.17",
+          "Status": "affected",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23302",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:d7517fdb910a1193f44988e7fa7d3ee3287b3fc3671328080a50255c963ecb02",
+          "Title": "log4j: Remote code execution in Log4j 1.x when application is configured to use JMSSink",
+          "Description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 3,
+            "redhat": 2,
+            "rocky": 3,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+            "https://access.redhat.com/security/cve/CVE-2022-23302",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2031667",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041949",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041959",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2041967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4104",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23302",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23305",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23307",
+            "https://errata.almalinux.org/8/ALSA-2022-0290.html",
+            "https://errata.rockylinux.org/RLSA-2022:0290",
+            "https://github.com/apache/logging-log4j1",
+            "https://linux.oracle.com/cve/CVE-2022-23302.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9419.html",
+            "https://lists.apache.org/thread/bsr3l5qz4g0myrjhy9h67bcxodpkwj4w",
+            "https://logging.apache.org/log4j/1.2/index.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23302",
+            "https://security.netapp.com/advisory/ntap-20220217-0006",
+            "https://security.netapp.com/advisory/ntap-20220217-0006/",
+            "https://ubuntu.com/security/notices/USN-5998-1",
+            "https://ubuntu.com/security/notices/USN-7590-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23302",
+            "https://www.openwall.com/lists/oss-security/2022/01/18/3",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.vicarius.io/vsociety/posts/cve-2022-23302-detect-log4j-1217-vulnerability",
+            "https://www.vicarius.io/vsociety/posts/cve-2022-23302-mitigate-log4j-1217-vulnerability"
+          ],
+          "PublishedDate": "2022-01-18T16:15:08.3Z",
+          "LastModifiedDate": "2026-06-17T04:29:49.853Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-26464",
+          "VendorIDs": [
+            "GHSA-vp98-w2p3-mv35"
+          ],
+          "PkgID": "log4j:log4j:1.2.17::dbc5999b",
+          "PkgName": "log4j:log4j",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/log4j/log4j@1.2.17",
+            "UID": "96d298c8e7042e25"
+          },
+          "InstalledVersion": "1.2.17",
+          "FixedVersion": "2.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-26464",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:7b855feee95d92e47f54aad2cdbf9648ceda92a901d137b7304ca17788465e2a",
+          "Title": "log4j1-socketappender: DoS via hashmap logging",
+          "Description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-26464",
+            "https://github.com/apache/logging-log4j2",
+            "https://lists.apache.org/thread/wkx6grrcjkh86crr49p4blc1v1nflj3t",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-26464",
+            "https://security.netapp.com/advisory/ntap-20230505-0008",
+            "https://security.netapp.com/advisory/ntap-20230505-0008/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-26464",
+            "https://www.ibm.com/support/pages/security-bulletin-vulnerability-log4j-1216jar-affect-ibm-operations-analytics-log-analysis-cve-2023-26464"
+          ],
+          "PublishedDate": "2023-03-10T14:15:10.453Z",
+          "LastModifiedDate": "2026-06-17T05:43:23.487Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-41853",
+          "VendorIDs": [
+            "GHSA-77xx-rxvh-q682"
+          ],
+          "PkgID": "org.hsqldb:hsqldb:2.3.4::c008124f",
+          "PkgName": "org.hsqldb:hsqldb",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.hsqldb/hsqldb@2.3.4",
+            "UID": "2c9f8d555fb305f3"
+          },
+          "InstalledVersion": "2.3.4",
+          "FixedVersion": "2.7.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-41853",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:a08d74eef26c74a0fed8d857619bec4a427863059758e77ee9454e5b843d2a32",
+          "Title": "hsqldb: Untrusted input may lead to RCE attack",
+          "Description": "Those using java.sql.Statement or java.sql.PreparedStatement in hsqldb (HyperSQL DataBase) to process untrusted input may be vulnerable to a remote code execution attack. By default it is allowed to call any static method of any Java class in the classpath resulting in code execution. The issue can be prevented by updating to 2.7.1 or by setting the system property \"hsqldb.method_class_names\" to classes which are allowed to be called. For example, System.setProperty(\"hsqldb.method_class_names\", \"abc\") or Java argument -Dhsqldb.method_class_names=\"abc\" can be used. From version 2.7.1 all classes by default are not accessible except those in java.lang.Math and need to be manually enabled.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-470"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 4,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://hsqldb.org/doc/2.0/guide/sqlroutines-chapt.html#src_jrt_access_control",
+            "https://access.redhat.com/security/cve/CVE-2022-41853",
+            "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50212#c7",
+            "https://github.com/advisories/GHSA-77xx-rxvh-q682",
+            "https://linux.oracle.com/cve/CVE-2022-41853.html",
+            "https://linux.oracle.com/errata/ELSA-2023-12103.html",
+            "https://lists.debian.org/debian-lts-announce/2022/12/msg00020.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41853",
+            "https://sourceforge.net/projects/hsqldb",
+            "https://www.cve.org/CVERecord?id=CVE-2022-41853",
+            "https://www.debian.org/security/2023/dsa-5313"
+          ],
+          "PublishedDate": "2022-10-06T18:17:07.19Z",
+          "LastModifiedDate": "2026-06-17T05:03:56.057Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-26945",
+          "VendorIDs": [
+            "GHSA-qq48-m4jx-xqh8"
+          ],
+          "PkgID": "org.mybatis:mybatis:3.4.1::58a4de7e",
+          "PkgName": "org.mybatis:mybatis",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.mybatis/mybatis@3.4.1",
+            "UID": "96d18d6bac8e8cea"
+          },
+          "InstalledVersion": "3.4.1",
+          "FixedVersion": "3.5.6",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26945",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:ab723989487e9b4ef8790a99211569ee35774493b807b9566f54daa36824c910",
+          "Title": "mybatis: mishandles deserialization of object streams which could result in remote code execution",
+          "Description": "MyBatis before 3.5.6 mishandles deserialization of object streams.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 5.1,
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-26945",
+            "https://github.com/mybatis/mybatis-3/compare/mybatis-3.5.5...mybatis-3.5.6",
+            "https://github.com/mybatis/mybatis-3/pull/2079",
+            "https://github.com/mybatis/mybatis-3/releases/tag/mybatis-3.5.6",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26945",
+            "https://www.cve.org/CVERecord?id=CVE-2020-26945"
+          ],
+          "PublishedDate": "2020-10-10T20:15:11.9Z",
+          "LastModifiedDate": "2026-06-17T03:08:35.84Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22965",
+          "VendorIDs": [
+            "GHSA-36p3-wjmg-h94x"
+          ],
+          "PkgID": "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+          "PkgName": "org.springframework:spring-beans",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-beans@4.3.4.RELEASE",
+            "UID": "cead760c90a37b02"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "5.2.20.RELEASE, 5.3.18",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22965",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:ab424591516ceff6ab6e857e80e1e09ab13db4d0f492d01d034ab1acde275cf5",
+          "Title": "spring-framework: RCE via Data Binding on JDK 9+",
+          "Description": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-94"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 4,
+            "redhat": 3,
+            "ubuntu": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/166713/Spring4Shell-Code-Execution.html",
+            "http://packetstormsecurity.com/files/167011/Spring4Shell-Spring-Framework-Class-Property-Remote-Code-Execution.html",
+            "https://access.redhat.com/security/cve/CVE-2022-22965",
+            "https://bugalert.org/content/notices/2022-03-30-spring.html",
+            "https://cert-portal.siemens.com/productcert/pdf/ssa-254054.pdf",
+            "https://github.com/spring-projects/spring-boot/releases/tag/v2.5.12",
+            "https://github.com/spring-projects/spring-boot/releases/tag/v2.6.6",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/002546b3e4b8d791ea6acccb81eb3168f51abb15",
+            "https://github.com/spring-projects/spring-framework/issues/28260",
+            "https://github.com/spring-projects/spring-framework/releases/tag/v5.2.20.RELEASE",
+            "https://github.com/spring-projects/spring-framework/releases/tag/v5.3.18",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22965",
+            "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0005",
+            "https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement",
+            "https://tanzu.vmware.com/security/cve-2022-22965",
+            "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-java-spring-rce-Zx9GUc67",
+            "https://ubuntu.com/security/notices/USN-7165-1",
+            "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+            "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2022-22965",
+            "https://www.cve.org/CVERecord?id=CVE-2022-22965",
+            "https://www.cyberkendra.com/2022/03/spring4shell-details-and-exploit-code.html",
+            "https://www.kb.cert.org/vuls/id/970766",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.praetorian.com/blog/spring-core-jdk9-rce/"
+          ],
+          "PublishedDate": "2022-04-01T23:15:13.87Z",
+          "LastModifiedDate": "2026-06-17T04:29:15.61Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22970",
+          "VendorIDs": [
+            "GHSA-hh26-6xwr-ggv7"
+          ],
+          "PkgID": "org.springframework:spring-beans:4.3.4.RELEASE::28419710",
+          "PkgName": "org.springframework:spring-beans",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-beans@4.3.4.RELEASE",
+            "UID": "cead760c90a37b02"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "5.2.22.RELEASE, 5.3.20",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22970",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:858e32f5eed586c6baef34417c805c09ea4b52f1608363c12011ba2cbe2ad0df",
+          "Title": "springframework: DoS via data binding to multipartFile or servlet part",
+          "Description": "In spring framework versions prior to 5.3.20+ , 5.2.22+ and old unsupported versions, applications that handle file uploads are vulnerable to DoS attack if they rely on data binding to set a MultipartFile or javax.servlet.Part to a field in a model object.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 3.5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-22970",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/50177b1ad3485bd44239b1756f6c14607476fcf2",
+            "https://github.com/spring-projects/spring-framework/commit/83186b689f11f5e6efe7ccc08fdeb92f66fcd583",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22970",
+            "https://security.netapp.com/advisory/ntap-20220616-0006",
+            "https://security.netapp.com/advisory/ntap-20220616-0006/",
+            "https://tanzu.vmware.com/security/cve-2022-22970",
+            "https://www.cve.org/CVERecord?id=CVE-2022-22970",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-05-12T20:15:15.037Z",
+          "LastModifiedDate": "2026-06-17T04:29:16.277Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-22968",
+          "VendorIDs": [
+            "GHSA-g5mm-vmx4-3rg7"
+          ],
+          "PkgID": "org.springframework:spring-context:4.3.4.RELEASE::266ec700",
+          "PkgName": "org.springframework:spring-context",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-context@4.3.4.RELEASE",
+            "UID": "4e0295eb9ce2a79a"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "5.3.19, 5.2.21.RELEASE",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22968",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:b66f93eb02c629fb3e3d9a89f7d9b0d6ab0b842e22e5ed3e4185e08660ca4e08",
+          "Title": "Framework: Data Binding Rules Vulnerability",
+          "Description": "In Spring Framework versions 5.3.0 - 5.3.18, 5.2.0 - 5.2.20, and older unsupported versions, the patterns for disallowedFields on a DataBinder are case sensitive which means a field is not effectively protected unless it is listed with both upper and lower case for the first character of the field, including upper and lower case for the first character of all nested fields within the property path.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-178"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 2,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V2Score": 5,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-22968",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/833e750175349ab4fd502109a8b41af77e25cdea",
+            "https://github.com/spring-projects/spring-framework/commit/a7cf19cec5ebd270f97a194d749e2d5701ad2ab7",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-22968",
+            "https://security.netapp.com/advisory/ntap-20220602-0004",
+            "https://security.netapp.com/advisory/ntap-20220602-0004/",
+            "https://tanzu.vmware.com/security/cve-2022-22968",
+            "https://www.cve.org/CVERecord?id=CVE-2022-22968",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-04-14T21:15:08.643Z",
+          "LastModifiedDate": "2026-06-17T04:29:16.07Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-1272",
+          "VendorIDs": [
+            "GHSA-4487-x383-qpph"
+          ],
+          "PkgID": "org.springframework:spring-core:4.3.4.RELEASE::c9404c84",
+          "PkgName": "org.springframework:spring-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-core@4.3.4.RELEASE",
+            "UID": "9943fe0acf97d2ba"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "4.3.15, 5.0.5",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1272",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:9032ef4d77e6247c78fad82412d9c3935413c8b1534d053859377abe96bc4816",
+          "Title": "spring-framework: Multipart content pollution",
+          "Description": "Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, provide client-side support for multipart requests. When Spring MVC or Spring WebFlux server application (server A) receives input from a remote client, and then uses that input to make a multipart request to another server (server B), it can be exposed to an attack, where an extra multipart is inserted in the content of the request from server A, causing server B to use the wrong value for a part it expects. This could to lead privilege escalation, for example, if the part content represents a username or user roles.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html",
+            "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html",
+            "http://www.securityfocus.com/bid/103697",
+            "https://access.redhat.com/errata/RHSA-2018:1320",
+            "https://access.redhat.com/errata/RHSA-2018:2669",
+            "https://access.redhat.com/security/cve/CVE-2018-1272",
+            "https://github.com/advisories/GHSA-4487-x383-qpph",
+            "https://github.com/spring-projects/spring-framework/commit/ab2410c754b67902f002bfcc0c3895bd7772d39",
+            "https://github.com/spring-projects/spring-framework/commit/e02ff3a0da50744b0980d5d665fd242eedea767",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-1272",
+            "https://pivotal.io/security/cve-2018-1272",
+            "https://www.cve.org/CVERecord?id=CVE-2018-1272",
+            "https://www.oracle.com/security-alerts/cpujul2020.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html"
+          ],
+          "PublishedDate": "2018-04-06T13:29:00.563Z",
+          "LastModifiedDate": "2026-06-17T01:50:53.35Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2018-15756",
+          "VendorIDs": [
+            "GHSA-ffvq-7w96-97p7"
+          ],
+          "PkgID": "org.springframework:spring-core:4.3.4.RELEASE::c9404c84",
+          "PkgName": "org.springframework:spring-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-core@4.3.4.RELEASE",
+            "UID": "9943fe0acf97d2ba"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "5.1.1.RELEASE, 5.0.10.RELEASE, 4.3.20.RELEASE",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-15756",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:efd0974268b3154f5d8d299871257618216288d49a5cbe1ff343c956cf8f2f30",
+          "Title": "springframework: DoS Attack via Range Requests",
+          "Description": "Spring Framework, version 5.1, versions 5.0.x prior to 5.0.10, versions 4.3.x prior to 4.3.20, and older unsupported versions on the 4.2.x branch provide support for range requests when serving static resources through the ResourceHttpRequestHandler, or starting in 5.0 when an annotated controller returns an org.springframework.core.io.Resource. A malicious user (or attacker) can add a range header with a high number of ranges, or with wide ranges that overlap, or both, for a denial of service attack. This vulnerability affects applications that depend on either spring-webmvc or spring-webflux. Such applications must also have a registration for serving static resources (e.g. JS, CSS, images, and others), or have an annotated controller that returns an org.springframework.core.io.Resource. Spring Boot applications that depend on spring-boot-starter-web or spring-boot-starter-webflux are ready to serve static resources out of the box and are therefore vulnerable.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/105703",
+            "https://access.redhat.com/security/cve/CVE-2018-15756",
+            "https://github.com/spring-projects/spring-framework",
+            "https://lists.apache.org/thread.html/339fd112517e4873695b5115b96acdddbfc8f83b10598528d37c7d12@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/77886fec378ee6064debb1efb6b464a4a0173b2ff0d151ed86d3a228@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/7b156ee50ba3ecce87b33c06bf7a749d84ffee55e69bfb5eca88fcc3@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/8a1fe70534fc52ff5c9db5ac29c55657f802cbefd7e9d9850c7052bd@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/a3071e11c6fbd593022074ec1b4693f6d948c2b02cfa4a5d854aed68@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/bb354962cb51fff65740d5fb1bc2aac56af577c06244b57c36f98e4d@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/d6a84f52db89804b0ad965f3ea2b24bb880edee29107a1c5069cc3dd@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/efaa52b0aa67aae7cbd9e6ef96945387e422d7ce0e65434570a37b1d@%3Cissues.activemq.apache.org%3E",
+            "https://lists.apache.org/thread.html/f8905507a2c94af6b08b72d7be0c4b8c6660e585f00abfafeccc86bc@%3Cissues.activemq.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/04/msg00022.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-15756",
+            "https://pivotal.io/security/cve-2018-15756",
+            "https://www.cve.org/CVERecord?id=CVE-2018-15756",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpuapr2020.html",
+            "https://www.oracle.com/security-alerts/cpujan2020.html",
+            "https://www.oracle.com/security-alerts/cpujan2021.html",
+            "https://www.oracle.com/security-alerts/cpujul2020.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html",
+            "https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html"
+          ],
+          "PublishedDate": "2018-10-18T22:29:00.443Z",
+          "LastModifiedDate": "2026-08-25T16:28:27.31Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-20863",
+          "VendorIDs": [
+            "GHSA-wxqc-pxw9-g2p8"
+          ],
+          "PkgID": "org.springframework:spring-expression:4.3.4.RELEASE::b9073f93",
+          "PkgName": "org.springframework:spring-expression",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-expression@4.3.4.RELEASE",
+            "UID": "a14eeba892cd19ce"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "6.0.8, 5.3.27, 5.2.24.RELEASE",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-20863",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:87bded81cc1b85d803e8f12cec2d0a3c4d40c5fc99941dec0cb416663a5303e0",
+          "Title": "springframework: Spring Expression DoS Vulnerability",
+          "Description": "In spring framework versions prior to 5.2.24 release+ ,5.3.27+ and 6.0.8+ , it is possible for a user to provide a specially crafted SpEL expression that may cause a denial-of-service (DoS) condition.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-917"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-20863",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/965a6392757d20f9db19241126fcc719a51eac15",
+            "https://github.com/spring-projects/spring-framework/commit/b73f5fcac22555f844cf27a7eeb876cb9d7f7f7e",
+            "https://github.com/spring-projects/spring-framework/commit/ebc82654282bda547fbc20a9749ab1bda886a46f",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-20863",
+            "https://security.netapp.com/advisory/ntap-20240524-0015",
+            "https://security.netapp.com/advisory/ntap-20240524-0015/",
+            "https://spring.io/security/cve-2023-20863",
+            "https://www.cve.org/CVERecord?id=CVE-2023-20863"
+          ],
+          "PublishedDate": "2023-04-13T20:15:07.777Z",
+          "LastModifiedDate": "2026-06-17T05:31:02.697Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-41849",
+          "VendorIDs": [
+            "GHSA-775g-4xr8-78h8"
+          ],
+          "PkgID": "org.springframework:spring-expression:4.3.4.RELEASE::b9073f93",
+          "PkgName": "org.springframework:spring-expression",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-expression@4.3.4.RELEASE",
+            "UID": "a14eeba892cd19ce"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "Status": "affected",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41849",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:0bf878f5cab5c6be3848a8bd53ab21ff642bdf61a43ec409dbd7ef4ff7c05505",
+          "Title": "spring-framework: Spring Framework: Denial of Service via integer overflow in SpEL",
+          "Description": "An integer overflow vulnerability exists in the evaluation logic of the Spring Expression Language (SpEL). An attacker can exploit this by supplying a specially crafted SpEL expression that triggers excessive resource consumption, resulting in a Denial of Service (DoS).\n\nAffected versions:\nSpring Framework 5.3.0 through 5.3.48.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-41849",
+            "https://github.com/spring-projects/spring-framework",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41849",
+            "https://spring.io/security/cve-2026-41849",
+            "https://www.cve.org/CVERecord?id=CVE-2026-41849"
+          ],
+          "PublishedDate": "2026-06-09T05:16:37.06Z",
+          "LastModifiedDate": "2026-07-23T08:10:00.137Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-41850",
+          "VendorIDs": [
+            "GHSA-r5w3-xv2f-j59q"
+          ],
+          "PkgID": "org.springframework:spring-expression:4.3.4.RELEASE::b9073f93",
+          "PkgName": "org.springframework:spring-expression",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-expression@4.3.4.RELEASE",
+            "UID": "a14eeba892cd19ce"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "7.0.8, 6.2.19",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-41850",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:b40079eea9bedee2d2bd12162a12693fcd532b202de3cea185b861595b4b7266",
+          "Title": "spring-framework: Spring Framework: Denial of Service via specially crafted SpEL expressions",
+          "Description": "Applications that evaluate user-supplied Spring Expression Language (SpEL) expressions are vulnerable to an Algorithmic Denial of Service (DoS). By providing a specially crafted expression, an attacker can trigger excessive resource consumption during evaluation, leading to application degradation or unavailability.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-407"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-41850",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/releases/tag/v6.2.19",
+            "https://github.com/spring-projects/spring-framework/releases/tag/v7.0.8",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41850",
+            "https://spring.io/security/cve-2026-41850",
+            "https://www.cve.org/CVERecord?id=CVE-2026-41850"
+          ],
+          "PublishedDate": "2026-06-09T05:16:37.177Z",
+          "LastModifiedDate": "2026-07-23T08:10:00.137Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-1000027",
+          "VendorIDs": [
+            "GHSA-4wrc-f8pq-fpqp"
+          ],
+          "PkgID": "org.springframework:spring-web:4.3.4.RELEASE::572b411f",
+          "PkgName": "org.springframework:spring-web",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@4.3.4.RELEASE",
+            "UID": "8ddc8c1b0bc4eed2"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "6.0.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1000027",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:21d4139eb5ab35186c3ffdb3143a44a21dcbb0012ba3a6af293b86f039418699",
+          "Title": "spring: HttpInvokerServiceExporter readRemoteInvocation method untrusted java deserialization",
+          "Description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 4,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2016-1000027",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000027",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/2b051b8b321768a4cfef83077db65c6328ffd60f",
+            "https://github.com/spring-projects/spring-framework/commit/5cbe90b2cd91b866a5a9586e460f311860e11cfa",
+            "https://github.com/spring-projects/spring-framework/issues/21680",
+            "https://github.com/spring-projects/spring-framework/issues/24434",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-1231625331",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-579669626",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-582313417",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-744519525",
+            "https://jira.spring.io/browse/SPR-17143?redirect=false",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+            "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+            "https://security-tracker.debian.org/tracker/CVE-2016-1000027",
+            "https://security.netapp.com/advisory/ntap-20230420-0009",
+            "https://security.netapp.com/advisory/ntap-20230420-0009/",
+            "https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now",
+            "https://support.contrastsecurity.com/hc/en-us/articles/4402400830612-Spring-web-Java-Deserialization-CVE-2016-1000027",
+            "https://www.cve.org/CVERecord?id=CVE-2016-1000027",
+            "https://www.tenable.com/security/research/tra-2016-20"
+          ],
+          "PublishedDate": "2020-01-02T23:15:11.857Z",
+          "LastModifiedDate": "2024-11-21T02:42:50.717Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22243",
+          "VendorIDs": [
+            "GHSA-ccgv-vj62-xf9h"
+          ],
+          "PkgID": "org.springframework:spring-web:4.3.4.RELEASE::572b411f",
+          "PkgName": "org.springframework:spring-web",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@4.3.4.RELEASE",
+            "UID": "8ddc8c1b0bc4eed2"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "6.1.4, 6.0.17, 5.3.32",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22243",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:97e2e82e7ce9601e69633cfcb438ae2a090008fb194ed4788fe7252b1e7a7ede",
+          "Title": "springframework: URL Parsing with Host Validation",
+          "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:N",
+              "V3Score": 3.4
+            }
+          },
+          "References": [
+            "http://seclists.org/fulldisclosure/2024/Sep/24",
+            "https://access.redhat.com/security/cve/CVE-2024-22243",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22243",
+            "https://security.netapp.com/advisory/ntap-20240524-0001",
+            "https://security.netapp.com/advisory/ntap-20240524-0001/",
+            "https://spring.io/security/cve-2024-22243",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22243"
+          ],
+          "PublishedDate": "2024-02-23T05:15:08.143Z",
+          "LastModifiedDate": "2026-06-17T07:11:01.04Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22259",
+          "VendorIDs": [
+            "GHSA-hgjh-9rj2-g67j"
+          ],
+          "PkgID": "org.springframework:spring-web:4.3.4.RELEASE::572b411f",
+          "PkgName": "org.springframework:spring-web",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@4.3.4.RELEASE",
+            "UID": "8ddc8c1b0bc4eed2"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "6.1.5, 6.0.18, 5.3.33",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22259",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:a0b0849cc850b244507525efd15b7d04dbe7c1e040c39623b78fd2aed0c5baa5",
+          "Title": "springframework: URL Parsing with Host Validation",
+          "Description": "Applications that use UriComponentsBuilder in Spring Framework to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-601"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-22259",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/297cbae2990e1413537c55845a7e0ea0ffd9f9bb",
+            "https://github.com/spring-projects/spring-framework/commit/381f790329a48b74c2a49fc1384dd68ca9153501",
+            "https://github.com/spring-projects/spring-framework/commit/f2fd2f12269c6a781c5b2c20b3c24141055a3d68",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22259",
+            "https://security.netapp.com/advisory/ntap-20240524-0002",
+            "https://security.netapp.com/advisory/ntap-20240524-0002/",
+            "https://spring.io/security/cve-2024-22259",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22259"
+          ],
+          "PublishedDate": "2024-03-16T05:15:20.83Z",
+          "LastModifiedDate": "2026-06-17T07:11:03.053Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-22262",
+          "VendorIDs": [
+            "GHSA-2wrp-6fg6-hmc5"
+          ],
+          "PkgID": "org.springframework:spring-web:4.3.4.RELEASE::572b411f",
+          "PkgName": "org.springframework:spring-web",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@4.3.4.RELEASE",
+            "UID": "8ddc8c1b0bc4eed2"
+          },
+          "InstalledVersion": "4.3.4.RELEASE",
+          "FixedVersion": "5.3.34, 6.0.19, 6.1.6",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-22262",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:f34c2dc7cb9850228c235c5c28d8093398cd8cd7bb2721e9a1b9cc5798877081",
+          "Title": "springframework: URL Parsing with Host Validation",
+          "Description": "Applications that use UriComponentsBuilder to parse an externally provided URL (e.g. through a query parameter) AND perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html  attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22259 https://spring.io/security/cve-2024-22259  and  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-601",
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-22262",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/blob/main/spring-web/src/main/java/org/springframework/web/util/UriComponentsBuilder.java",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-22262",
+            "https://security.netapp.com/advisory/ntap-20240524-0003",
+            "https://security.netapp.com/advisory/ntap-20240524-0003/",
+            "https://spring.io/security/cve-2024-22262",
+            "https://www.cve.org/CVERecord?id=CVE-2024-22262"
+          ],
+          "PublishedDate": "2024-04-16T06:15:46.27Z",
+          "LastModifiedDate": "2026-06-17T07:11:03.473Z"
+        }
+      ]
+    }
+  ]
+}

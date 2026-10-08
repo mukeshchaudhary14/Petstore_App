@@ -7,7 +7,7 @@ set -e
 
 IMAGE_NAME="${1:-petstore-app:latest}"
 CONTAINER_NAME="petstore-app"
-PORT="8080"
+PORT="${PORT:-8082}"
 
 echo "======================================================================"
 echo " Building Docker Image: ${IMAGE_NAME}"

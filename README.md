@@ -22,9 +22,9 @@ A production-ready, cloud-native DevOps deployment of the **Petstore Application
 
 # Or directly with Docker:
 docker build -t petstore-app:latest .
-docker run -d -p 8080:8080 --name petstore-app petstore-app:latest
+docker run -d -p 8082:8080 --name petstore-app petstore-app:latest
 ```
-Access the application at: `http://localhost:8080/jpetstore/` or `http://localhost:8080/`
+Access the application at: `http://localhost:8082/jpetstore/` or `http://localhost:8082/`
 
 ---
 
