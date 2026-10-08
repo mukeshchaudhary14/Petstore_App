@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: petstore-config
+  namespace: petstore
+  labels:
+    app: petstore
+    app.kubernetes.io/name: petstore
+data:
+  JPETSTORE_PORT: "8080"
+  JAVA_OPTS: "-Xms256m -Xmx512m -XX:+UseG1GC -Djava.security.egd=file:/dev/./urandom"
+  CATALINA_OPTS: "-Djava.awt.headless=true"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: petstore-secret
+  namespace: petstore
+  labels:
+    app: petstore
+    app.kubernetes.io/name: petstore
+type: Opaque
+stringData:
+  APP_SECRET: "petstore-secure-token-2026"
+  DB_PASSWORD: "jpetstore-internal-pwd"

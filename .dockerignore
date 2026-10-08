@@ -1,0 +1,12 @@
+.git
+.github
+.idea
+*.iml
+target/
+.mvn/wrapper/maven-wrapper.jar
+*.md
+helm/
+k8s/
+argocd/
+helm-dashboard/
+scripts/

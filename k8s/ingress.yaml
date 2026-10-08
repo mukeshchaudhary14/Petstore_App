@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: petstore-ingress
+  namespace: petstore
+  labels:
+    app: petstore
+    app.kubernetes.io/name: petstore
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/proxy-body-size: "20m"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+    - host: petstore.local
+      http:
+        paths:
+          - path: /()(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: petstore-service
+                port:
+                  number: 80
+          - path: /jpetstore(/|$)(.*)
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: petstore-service
+                port:
+                  number: 80

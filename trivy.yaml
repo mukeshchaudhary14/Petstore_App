@@ -1,0 +1,24 @@
+# Trivy configuration for Petstore Application
+scanners:
+  - vuln
+  - misconfig
+  - secret
+
+severity:
+  - HIGH
+  - CRITICAL
+
+ignore-unfixed: true
+
+format: table
+
+misconfiguration:
+  scanners:
+    - dockerfile
+    - kubernetes
+    - helm
+
+vulnerability:
+  type:
+    - os
+    - library

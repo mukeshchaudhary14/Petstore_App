@@ -1,0 +1,16 @@
+apiVersion: v2
+name: petstore
+description: A Helm chart for Kubernetes deployment of MyBatis JPetStore Application
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - petstore
+  - java
+  - tomcat
+  - spring
+  - mybatis
+home: https://github.com/mukeshchaudhary14/Petstore_App
+maintainers:
+  - name: Mukesh Chaudhary
+    url: https://github.com/mukeshchaudhary14
