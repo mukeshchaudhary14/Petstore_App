@@ -1,13 +1,13 @@
 # PetStore Application - Complete End-to-End DevOps & GitOps Guide
 
-Ye guide **Petstore_App** ke complete DevOps lifecycle ko cover karti hai — bilkul **MedVault** project ki tarah. Isme Docker containerization, Docker Compose local setup, Trivy security scanning, Jenkins CI/CD pipeline, Kubernetes deployment, Helm chart packaging, Komodor Helm Dashboard visualization, aur ArgoCD GitOps continuous deployment shamil hain.
+This guide covers the complete DevOps and GitOps lifecycle for the **Petstore_App** — structured and implemented just like the **MedVault** enterprise project. It includes Docker multi-stage containerization, Docker Compose local setup, Trivy security vulnerability scanning, Jenkins CI/CD declarative pipeline, Kubernetes manifests, Helm 3 chart packaging, Komodor Helm Dashboard visualization, and ArgoCD continuous GitOps delivery.
 
 ---
 
 ## 📑 Table of Contents
 1. [Architecture Overview](#1-architecture-overview)
 2. [Project Fixes & Prerequisites](#2-project-fixes--prerequisites)
-3. [Docker & Containerization](#3-docker--containerization)
+3. [Docker & Multi-Stage Containerization](#3-docker--multi-stage-containerization)
 4. [Docker Compose Local Environment](#4-docker-compose-local-environment)
 5. [Trivy Vulnerability & Security Scanning](#5-trivy-vulnerability--security-scanning)
 6. [Jenkins CI/CD Declarative Pipeline](#6-jenkins-cicd-declarative-pipeline)
@@ -68,40 +68,41 @@ Ye guide **Petstore_App** ke complete DevOps lifecycle ko cover karti hai — bi
 
 ## 2. Project Fixes & Prerequisites
 
-Iss project me original repo me kuch missing files aur errors the jinko resolve kiya gaya:
-1. **Missing `pom.xml`**: Repository me Maven `pom.xml` file missing thi, jisko compatible MyBatis JPetStore Maven configuration ke sath add kiya gaya.
-2. **Missing MyBatis XML Mappers**: `ItemMapper.xml`, `LineItemMapper.xml`, `OrderMapper.xml`, `ProductMapper.xml`, aur `SequenceMapper.xml` upstream repo se download karke add ki gayi.
-3. **Directory Path Space Bug**: `src/main/resources/org/mybatis/jpetstore /` folder name me trailing space tha jisse Spring XML load nahi kar pata tha; use rename kiya gaya.
-4. **Duplicate Classes**: `org.mybatis.jpetstore.actions` aur `org.mybatis.jpetstore.web.actions` dono jagah duplicate files thi jisse compiler clash hota tha; invalid duplicate folder remove kiya gaya.
+In the original repository, several missing files and compilation bugs were identified and resolved:
+1. **Missing `pom.xml`**: The repository lacked a Maven `pom.xml`. A fully compatible Maven descriptor configured for Java 17/21 runtime compatibility was added.
+2. **Missing MyBatis XML Mappers**: Upstream XML mapping files (`ItemMapper.xml`, `LineItemMapper.xml`, `OrderMapper.xml`, `ProductMapper.xml`, and `SequenceMapper.xml`) were retrieved and configured under `src/main/resources/org/mybatis/jpetstore/mapper/`.
+3. **Directory Path Space Bug**: The folder `src/main/resources/org/mybatis/jpetstore /` contained a trailing space that prevented Spring from locating XML mappers at runtime; it was renamed to `jpetstore`.
+4. **Duplicate Classes**: Duplicate action classes under `org.mybatis.jpetstore.actions` and `org.mybatis.jpetstore.web.actions` were causing package conflicts; the invalid directory was pruned.
+5. **WAR Packaging Compatibility**: Updated `maven-war-plugin` to version `3.4.0` and skipped outdated `animal-sniffer` Java 1.6 checks to allow clean compilation on modern JDKs.
 
 ---
 
-## 3. Docker & Containerization
+## 3. Docker & Multi-Stage Containerization
 
 ### Multi-Stage Dockerfile Highlights:
-- **Build Stage**: `maven:3.9-eclipse-temurin-17-alpine` ka use karke clean WAR artifact compile karta hai.
-- **Runtime Stage**: `tomcat:9.0-jre17-temurin-jammy` hardened image. Default sample webapps delete kiye gaye hain.
-- **Security Compliance**: Non-root user `tomcat` (UID `1001`) create kiya gaya hai taaki container root privileges se run na ho (Trivy compliance).
-- **Dual Deployment**: `jpetstore.war` ko `ROOT.war` aur `jpetstore.war` dono me deploy kiya gaya hai taaki root URL `/` aur context path `/jpetstore/` dono kaam karein.
-- **Health Checks**: Built-in container health check probe.
+- **Build Stage**: Uses `maven:3.9-eclipse-temurin-17-alpine` to compile and package the clean WAR artifact (`target/jpetstore.war`).
+- **Runtime Stage**: Uses hardened `tomcat:9.0-jre17-temurin-jammy`. All default sample webapps (`docs`, `examples`, `manager`, `ROOT`) are purged.
+- **Security Compliance**: Creates and runs under a dedicated non-root user `tomcat` (UID `1001`) to comply with DevSecOps standards and Trivy scans.
+- **Dual Deployment**: `jpetstore.war` is copied to both `ROOT.war` and `jpetstore.war` inside Tomcat webapps, making the application accessible via both root `/` and `/jpetstore/`.
+- **Health Checks**: Built-in container healthcheck probe checks application status automatically.
 
 ### Docker Commands:
 ```bash
 # 1. Build Docker image
 docker build -t petstore-app:latest .
 
-# 2. Run container
-docker run -d -p 8080:8080 --name petstore-app petstore-app:latest
+# 2. Run container (mapped to host port 8082 to avoid Jenkins port 8080 collision)
+docker run -d -p 8082:8080 --name petstore-app petstore-app:latest
 
 # 3. Check logs & status
 docker ps
 docker logs -f petstore-app
 
 # 4. Access application
-curl -I http://localhost:8080/jpetstore/
+curl -I http://localhost:8082/jpetstore/
 ```
 
-Or simply run the automated script:
+Or execute the automated helper script:
 ```bash
 ./scripts/build-and-run.sh
 ```
@@ -110,26 +111,26 @@ Or simply run the automated script:
 
 ## 4. Docker Compose Local Environment
 
-`docker-compose.yaml` local machine par single-command testing aur development ke liye configured hai:
-- Container Name: `petstore-app`
-- Port Mapping: `8080:8080`
-- Resource Limits: 1 CPU, 1024MB Memory limit
-- Logging Driver: `json-file` with log rotation (10m max-size)
-- Health Check: Automatically checks `http://localhost:8080/jpetstore/`
-- Isolated Network: `petstore-network` bridge
+`docker-compose.yaml` provides single-command orchestration for local testing and development:
+- **Container Name**: `petstore-app`
+- **Port Mapping**: `8082:8080` (avoids conflict with Jenkins on port 8080)
+- **Resource Limits**: 1.0 CPU, 1024MB Memory limit
+- **Logging Driver**: `json-file` with automatic log rotation (max 10MB, 3 files)
+- **Health Check**: Automatically monitors `http://localhost:8080/jpetstore/`
+- **Isolated Network**: `petstore-network` bridge
 
 ### Docker Compose Commands:
 ```bash
-# Start the application in background with fresh build
+# Start application in background with fresh build
 docker compose up --build -d
 
 # Check service status & health
 docker compose ps
 
-# View real-time logs
+# View live container logs
 docker compose logs -f
 
-# Stop and clean up
+# Stop and clean up containers
 docker compose down
 ```
 
@@ -137,19 +138,20 @@ docker compose down
 
 ## 5. Trivy Vulnerability & Security Scanning
 
-Security DevSecOps best practices ke according `trivy.yaml` aur `scripts/trivy-scan.sh` add kiya gaya hai:
+In accordance with DevSecOps best practices, `trivy.yaml` and `scripts/trivy-scan.sh` provide automated security validation:
 
-### What gets scanned:
-1. **Filesystem Scan (`trivy fs`)**: Source code, dependencies aur leaked secrets/API keys scan karta hai.
-2. **Docker Image Scan (`trivy image`)**: Container OS packages aur libraries me `HIGH` aur `CRITICAL` CVEs detect karta hai.
-3. **IaC Misconfiguration Scan (`trivy config`)**: Kubernetes YAML aur Helm charts me security misconfigurations scan karta hai.
+### Scan Targets:
+1. **Filesystem Scan (`trivy fs`)**: Scans source code, dependencies, and leaked secrets/API tokens.
+2. **Docker Image Scan (`trivy image`)**: Scans container OS packages and application libraries for `HIGH` and `CRITICAL` CVEs.
+3. **IaC Misconfiguration Scan (`trivy config`)**: Scans Kubernetes manifests and Helm charts for security misconfigurations.
 
 ### Running Trivy Scan:
 ```bash
-# Run complete scan suite
+# Run complete security scan suite
 ./scripts/trivy-scan.sh petstore-app:latest
 ```
-Scan ke baad reports `security-reports/` folder me save hoti hain:
+
+Scan reports are saved to the `security-reports/` directory:
 - `trivy-fs-report.txt` & `trivy-fs-report.json`
 - `trivy-image-report.txt` & `trivy-image-report.json`
 - `trivy-iac-report.txt`
@@ -158,48 +160,48 @@ Scan ke baad reports `security-reports/` folder me save hoti hain:
 
 ## 6. Jenkins CI/CD Declarative Pipeline
 
-`Jenkinsfile` me industry-standard CI/CD stages configure ki gayi hain:
+The declarative `Jenkinsfile` defines an enterprise-grade CI/CD pipeline with 8 automated stages:
 
 ### Pipeline Stages:
-1. **Checkout Code**: Git repository checkout karta hai.
-2. **Build & Test Application**: Maven package compile karta hai aur JUnit reports generate karta hai.
-3. **Trivy FS Scan**: Code & libraries par security scanning perform karta hai.
-4. **Docker Build**: Application container image create karta hai with unique build number tag (`mukeshchaudhary14/petstore-app:${BUILD_NUMBER}`).
-5. **Trivy Image Scan**: Container image release hone se pehle CVE vulnerability check karta hai.
-6. **Docker Push to Registry**: Image ko Docker Hub registry me push karta hai using Jenkins Credentials.
-7. **Helm Lint & IaC Scan**: Helm chart syntax aur configuration validate karta hai.
-8. **Deploy to Kubernetes**: Selected deployment method (`Helm`, `ArgoCD-GitOps`, ya `Kubectl`) se auto-deploy karta hai.
+1. **Checkout Code**: Checks out source code from Git repository.
+2. **Build & Test Application**: Compiles application with Maven and generates JUnit test reports.
+3. **Trivy FS Scan**: Scans repository code and dependencies for security flaws.
+4. **Docker Build**: Builds container image tagged with the unique build number (`mukeshchaudhary14/petstore-app:${BUILD_NUMBER}`).
+5. **Trivy Image Scan**: Scans the newly created container image before releasing.
+6. **Docker Push to Registry**: Authenticates and pushes image to Docker Hub using Jenkins credentials.
+7. **Helm Lint & IaC Scan**: Validates Helm chart syntax and infrastructure-as-code security.
+8. **Deploy to Kubernetes**: Deploys via selected method (`Helm`, `ArgoCD-GitOps`, or `Kubectl`).
 
 ### Required Jenkins Credentials:
-- **`dockerhub-credentials`**: Username/Password credential Docker Hub login ke liye.
-- **`kubeconfig`**: Secret file credential Kubernetes cluster access ke liye (agar Jenkins direct k8s deploy kare).
+- **`dockerhub-credentials`**: Username/Password credential for Docker Hub registry authentication.
+- **`kubeconfig`**: Secret file credential for Kubernetes cluster access (if direct cluster deployment is enabled in Jenkins).
 
 ---
 
 ## 7. Kubernetes Manifests (`k8s/`)
 
-Production-ready declarative YAML manifests `k8s/` directory me present hain:
+Declarative production-ready YAML manifests are located in the `k8s/` directory:
 
 | Manifest | Purpose |
 | :--- | :--- |
-| `namespace.yaml` | Dedicated `petstore` namespace create karta hai |
-| `configmap.yaml` | Application configuration aur JVM tuning parameters |
-| `secret.yaml` | Sensitive environment variables |
-| `deployment.yaml` | 2 replicas, non-root security context (UID 1001), Pod anti-affinity, liveness/readiness probes, resource limits |
-| `service.yaml` | ClusterIP (port 80 -> 8080) aur NodePort (port 30080) service |
+| `namespace.yaml` | Creates dedicated `petstore` namespace |
+| `configmap.yaml` | Stores application configurations and JVM tuning options |
+| `secret.yaml` | Stores sensitive environment variables and tokens |
+| `deployment.yaml` | 2 Replicas, non-root security context (UID 1001), Pod anti-affinity, liveness/readiness probes, resource limits |
+| `service.yaml` | ClusterIP (port 80 -> 8080) and NodePort (port 30080) services |
 | `ingress.yaml` | NGINX Ingress Controller rules for `petstore.local` |
-| `hpa.yaml` | HorizontalPodAutoscaler (scales 2 to 5 pods at 75% CPU / 80% RAM) |
-| `kustomization.yaml` | Kustomize manifest for single-command deploy (`kubectl apply -k k8s/`) |
+| `hpa.yaml` | HorizontalPodAutoscaler (scales 2 to 5 pods at 75% CPU / 80% Memory) |
+| `kustomization.yaml` | Kustomize manifest for single-command deployment (`kubectl apply -k k8s/`) |
 
 ### Deploy via kubectl:
 ```bash
-# Single command deploy
+# Automated deployment script
 ./scripts/k8s-deploy.sh
 
-# Or manual apply:
+# Or manual apply with Kustomize:
 kubectl apply -k k8s/
 
-# Verify:
+# Verify status:
 kubectl get pods,svc,ingress,hpa -n petstore
 ```
 
@@ -207,7 +209,7 @@ kubectl get pods,svc,ingress,hpa -n petstore
 
 ## 8. Helm Packaging & Chart (`helm/petstore/`)
 
-Application ko standard Helm chart me package kiya gaya hai taaki parameterization aur multi-environment deployment (dev/staging/prod) easy ho:
+The application is packaged into a standard Helm 3 chart for parameterized, multi-environment deployments (dev, staging, prod):
 
 ```
 helm/petstore/
@@ -227,7 +229,7 @@ helm/petstore/
 
 ### Helm Commands:
 ```bash
-# 1. Lint the chart
+# 1. Lint the Helm chart
 helm lint helm/petstore
 
 # 2. Dry run template rendering
@@ -246,7 +248,7 @@ helm status petstore -n petstore
 helm rollback petstore 1 -n petstore
 ```
 
-Or run the script:
+Or execute the helper script:
 ```bash
 ./scripts/helm-deploy.sh petstore petstore latest
 ```
@@ -255,21 +257,26 @@ Or run the script:
 
 ## 9. Komodor Helm Dashboard
 
-Komodor Helm Dashboard ek interactive visual web UI provide karta hai jisse cluster ke saare Helm charts aur releases manage kiye ja sakte hain.
+Komodor Helm Dashboard provides an interactive visual web interface to monitor, inspect, and manage all Helm charts and releases across your cluster.
 
 ### How to Run Helm Dashboard:
 
-#### Method A: Using Helm Plugin (Local)
+#### Method A: Using Helm CLI Plugin (Local)
 ```bash
+# Install plugin (if not already installed)
 helm plugin install https://github.com/komodorio/helm-dashboard
-helm dashboard --port 8080 --bind 0.0.0.0
+
+# Launch on port 8085
+./scripts/helm-dashboard.sh
+# Or manually:
+helm dashboard --port 8085 --bind 0.0.0.0
 ```
 
 #### Method B: Using Docker
 ```bash
 docker run --rm -it \
   --name helm-dashboard \
-  -p 8080:8080 \
+  -p 8085:8080 \
   -v ~/.kube/config:/root/.kube/config:ro \
   ghcr.io/komodorio/helm-dashboard:latest \
   --bind=0.0.0.0 --port=8080
@@ -277,67 +284,68 @@ docker run --rm -it \
 
 #### Method C: Deploy Inside Kubernetes Cluster
 ```bash
-# Apply RBAC and deployment
+# Apply RBAC and Deployment
 kubectl apply -f helm-dashboard/k8s/rbac.yaml
 kubectl apply -f helm-dashboard/k8s/deployment.yaml
 
-# Port forward to local browser
-kubectl port-forward svc/helm-dashboard-service -n helm-dashboard 8080:8080
+# Port-forward to local browser
+kubectl port-forward svc/helm-dashboard-service -n helm-dashboard 8085:8080
 ```
 
-Open browser at: `http://localhost:8080`
-
-Or simply run:
-```bash
-./scripts/helm-dashboard.sh
-```
+Open your browser at: **`http://localhost:8085`**
 
 ---
 
 ## 10. ArgoCD GitOps Deployment
 
-ArgoCD continuous delivery controller ke sath GitOps automation setup:
+ArgoCD continuously reconciles the desired state defined in this Git repository with the actual state in the Kubernetes cluster:
 
-### How it works:
-1. Git repo me `helm/petstore/values.yaml` me new image tag push hota hai.
-2. ArgoCD repository ko monitor karta hai aur diff detect karta hai.
-3. Automated sync policy ke through ArgoCD zero-downtime rolling update execute karta hai.
-4. Agar koi manually `kubectl` se cluster me resource change karta hai, toh `selfHeal: true` automatically use Git ke version par revert kar deta hai.
+### GitOps Workflow:
+1. When a new image tag or value is pushed to `helm/petstore/values.yaml` in Git, ArgoCD detects the change.
+2. ArgoCD automatically executes a zero-downtime rolling update.
+3. If any configuration is manually modified on the cluster via `kubectl`, `selfHeal: true` automatically reverts it back to match the Git repository.
 
 ### Installation & Application Setup:
 ```bash
-# 1. Automated installation
+# 1. Automated installation script
 ./argocd/install-argocd.sh
 
-# 2. Manual Apply:
+# 2. Manual application manifest apply:
 kubectl apply -f argocd/application.yaml
 
-# 3. Access ArgoCD UI:
-kubectl port-forward svc/argocd-server -n argocd 8080:443
-# Username: admin
-# Password:
-kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+# 3. Access ArgoCD Web UI:
+kubectl port-forward svc/argocd-server -n argocd 8443:443
 ```
+- **URL**: `https://localhost:8443`
+- **Username**: `admin`
+- **Password**:
+  ```bash
+  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+  ```
 
 ---
 
 ## 11. Troubleshooting & Verification Commands
 
-### Check Kubernetes Pod Logs:
+### Port Allocation Reference (Zero Conflict):
+| Component | Environment | Port | Access URL |
+| :--- | :--- | :--- | :--- |
+| **Jenkins** | Host System | **`8080`** | `http://localhost:8080` |
+| **PetStore App** | Docker / Docker Compose | **`8082`** | `http://localhost:8082/jpetstore/` |
+| **PetStore App** | Kubernetes (Port-Forward) | **`8082`** | `http://localhost:8082/jpetstore/` |
+| **Helm Dashboard** | Web UI | **`8085`** | `http://localhost:8085` |
+| **ArgoCD Dashboard** | GitOps Web UI | **`8443`** | `https://localhost:8443` |
+
+### Check Kubernetes Workloads:
 ```bash
+kubectl get pods,svc,ingress,hpa -n petstore
 kubectl logs -f -l app=petstore -n petstore
 ```
 
-### Port Forward Application:
+### Port-Forward PetStore Application from Kubernetes:
 ```bash
-kubectl port-forward svc/petstore-service 8080:80 -n petstore
+kubectl port-forward svc/petstore-service 8082:80 -n petstore
 ```
-
-### Access URLs:
-- **Application Web UI**: `http://localhost:8080/jpetstore/`
-- **Application Root URL**: `http://localhost:8080/`
-- **Helm Dashboard**: `http://localhost:8080`
-- **ArgoCD Dashboard**: `https://localhost:8080`
 
 ---
 *Developed & Maintained by Mukesh Chaudhary for Petstore_App DevOps & GitOps Automation.*
